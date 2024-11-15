@@ -893,3 +893,8 @@ border-radius: 50%;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+/*  our partners 	*/
+#partners li{
+	display: inline;
+	margin: 2%;
+}
