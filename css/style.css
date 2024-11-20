@@ -6,6 +6,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-color: #c4c797;
 }
 .brand {
 	font-family: 'Raleway', sans-serif;
@@ -897,4 +898,9 @@ border-radius: 50%;
 #partners li{
 	display: inline;
 	margin: 2%;
+}
+
+#clients li{
+	display: inline;
+	margin: 5px;
 }

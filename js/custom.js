@@ -111,3 +111,8 @@
 
 	}); // End document ready
 })(this.jQuery);
+
+
+function repricing() {
+	location.href="pricing.html";
+}
