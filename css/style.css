@@ -6,7 +6,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: #c4c797;
 }
 .brand {
 	font-family: 'Raleway', sans-serif;
@@ -18,8 +17,8 @@ body {
 body {
 	font-size: 15px;
 	line-height: 1.50;
-	color: #333333;
-	background-color: #ffffff;
+	color: #194f26;
+	background-color: #d7d1c5;
 	position: relative;
 }
 h1,
@@ -163,7 +162,7 @@ color: #FF89BA;
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
-	background-color: #222222;
+	background-color: #050505;
 	color: #ffffff;
 }
 .default-bg.blue {
@@ -903,4 +902,60 @@ border-radius: 50%;
 #clients li{
 	display: inline;
 	margin: 5px;
+}
+
+#container{
+	display: flex;
+	flex-direction: column;
+}
+
+.our-partners{
+	list-style-type: none;
+	/* background-color: #eda735; */
+	align-items: center;
+	margin: 2%;
+	border: transparent;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 5px rgba(0,0,10,0.3);
+	
+}
+
+.our-partners li{
+	display: inline-block;
+	width: 8%;
+	padding: 1%;
+	align-items: center;
+	margin: 1%;
+	
+}
+
+/* why our clients choose us section start */
+.whyrs{
+	margin-top: 20px;
+	height: 500px;
+	display: flex;
+}
+.whyrs div{
+	padding: 1%;
+	margin: 1%;
+	min-height: 50%;
+}
+
+.whyrs-img{
+	width: 20%;height: 52px;
+}
+
+.whyrs1{
+	width: 35%;
+}
+
+/* contact division */
+
+.condet{
+	display: flex;
+}
+
+.form-control{
+	border: grey;
+	border-radius: 5px;
 }
