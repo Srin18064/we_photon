@@ -112,7 +112,7 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .header {
 	color: #ffffff;
-	background-color: rgba(0, 0, 0, 1);
+	background-color: #d7d1c5;
 	padding: 10px 0;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -138,7 +138,7 @@ blockquote {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(74, 4, 38, 0.53);
+	background-color: rgba(255, 255, 255, 0);
 	content: "";
 }
 .banner-caption {
@@ -155,15 +155,17 @@ blockquote {
 color: #FF89BA;
 }
 .section {
-	background-color: #ffffff;
+	background-color: #d7d1c5;
 	padding: 80px 0;
+	border: none;
+	border-radius: 50px;
 }
 
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
-	background-color: #050505;
-	color: #ffffff;
+	background-color: #d7d1c5;
+	color: black;
 }
 .default-bg.blue {
 	background-color: #55acee;
@@ -665,7 +667,7 @@ padding: 10px 0;
 /* Fixed Header
 ----------------------------------------------------------------------------- */
 .fixed-header-on .header {
-	background-color: rgba(0, 0, 0, 0.95);
+	color: #000;
 	padding: 5px 0;
 }
 .fixed-header-on .brand {
@@ -916,7 +918,7 @@ border-radius: 50%;
 	margin: 2%;
 	border: transparent;
 	border-radius: 5px;
-	box-shadow: 0 0 10px 5px rgba(0,0,10,0.3);
+	/* box-shadow: 0 0 10px 5px rgba(0,0,10,0.3); */
 	
 }
 
@@ -931,9 +933,9 @@ border-radius: 50%;
 
 /* why our clients choose us section start */
 .whyrs{
-	margin-top: 20px;
-	height: 500px;
-	display: flex;
+	margin: 2%;
+	min-height: 500px;
+	
 }
 .whyrs div{
 	padding: 1%;
@@ -942,11 +944,15 @@ border-radius: 50%;
 }
 
 .whyrs-img{
-	width: 20%;height: 52px;
+	width: 20%;
+	height: 52px;
 }
 
 .whyrs1{
 	width: 35%;
+	margin-left: 15px;
+	padding: 10px;
+	justify-content: center;
 }
 
 /* contact division */
@@ -963,15 +969,15 @@ border-radius: 50%;
 .contact_container{
 	height: 100vh;
 	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	/* align-items: center;
+	justify-content: space-evenly; */
 	background-color: #d7d1c5;
 }
 
 .contact_left{
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
-	align-items: start;
+	align-items: start; */
 	gap: 20px;
 	background-color: #eda735;
 	border: none;
@@ -982,7 +988,7 @@ border-radius: 50%;
 .contact_left_title h2{
 	font-weight: 600;
 	font-size: 40px;
-	color: aquamarine;
+	color: black;
 	margin-bottom: 5px;
 }
 
@@ -990,7 +996,8 @@ border-radius: 50%;
 	border: none;
 	width: 120px;
 	height: 5px;
-	background-color: aquamarine;
+	margin-left: 10px;
+	background-color: black;
 	border-radius: 10px;
 	margin-bottom: 20px;
 
@@ -1001,6 +1008,8 @@ border-radius: 50%;
 	height: 50px;
 	border: none;
 	outline: none;
+	margin-top: 20px;
+	text-align: justify;
 	padding-left: 25px;
 	font-weight: 500 ;
 	color: #d7d1c5;
@@ -1018,6 +1027,7 @@ border-radius: 50%;
 }
 
 .contact_input::placeholder{
+	text-align: justify;
 	color: #eda735;
 }
 
@@ -1030,20 +1040,42 @@ border-radius: 50%;
 	gap: 10px;
 	border: none;
 	border-radius: 50px;
-	background: linear-gradient(270deg,#d7d1c5,aquamarine);
+	background: black;
 	cursor: pointer;
 
 }
 
-.contact_right{
+/* .contact_right{
 	width: 500px;
-}
+} */
 
 @media (max-width:800px) {
 	.contact_input{
 		width: 80vw;
+		align-items: justify;
 	}
-	.contact_right{
-		display: none;
+	.contact_container{
+		flex-direction: row;
 	}
+
 } 
+
+.banner-image{
+	background-color: #d7d1c5;
+}
+
+/* services section */
+
+.ser_sec{
+	background-color: #eda735;
+	margin: 20px;
+	border: transparent 1px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 5px rgba(0,0,10,0.3);
+	color: white;
+}
+
+.ser_img{
+	border-radius: 25px;
+	margin: 20px;
+}
