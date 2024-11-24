@@ -17,7 +17,7 @@ body {
 body {
 	font-size: 15px;
 	line-height: 1.50;
-	color: #194f26;
+	color: black;
 	background-color: #d7d1c5;
 	position: relative;
 }
@@ -1067,15 +1067,15 @@ border-radius: 50%;
 /* services section */
 
 .ser_sec{
-	background-color: #eda735;
+	
 	margin: 20px;
 	border: transparent 1px;
 	border-radius: 20px;
 	box-shadow: 0 0 10px 5px rgba(0,0,10,0.3);
-	color: white;
 }
 
 .ser_img{
+	max-width: 90%;
 	border-radius: 25px;
 	margin: 20px;
 }
