@@ -6,7 +6,7 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/banner1.jpeg');
+		$(".banner-image").backstretch('background-color: #eda735;');
 		
 		// Fixed header
 		//-----------------------------------------------
