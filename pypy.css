@@ -1,0 +1,28 @@
+body{
+    margin: 25px;
+
+}
+
+.policies{
+
+    margin-top: 80px;
+}
+
+.wephoton{
+    /* color: #eda735; */
+    font-weight: 600;
+    font-style: italic;
+    font-size: medium;
+
+}
+
+.tcppylist{
+    list-style: none;
+    text-align: center;
+}
+
+.tcppylist li{
+    display: inline;
+    margin: 10px;
+    
+}
