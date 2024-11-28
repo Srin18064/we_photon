@@ -1063,20 +1063,6 @@ border-radius: 50%;
 
 }
 
-/* .contact_right{
-	width: 500px;
-} */
-
-@media (max-width:800px) {
-	.contact_input{
-		width: 80vw;
-		align-items: justify;
-	}
-	.contact_container{
-		flex-direction: row;
-	}
-
-} 
 
 .banner-image{
 	background-color: #d7d1c5;
