@@ -743,6 +743,8 @@ width: 65px;
 height: 65px;
 border-radius: 50%;
 }
+
+
 /* Social Links
 ---------------------------------- */
 .social-links {
@@ -941,16 +943,6 @@ border-radius: 50%;
 	
 }
 
-/* why our clients choose us section start */
-/* .whyrs{
-	
-	
-}
-.whyrs div{
-	padding: 1%;
-	margin: 1%;
-	min-height: 50%;
-} */
 
 .whyrs-img{
 	width: 20%;
@@ -1082,19 +1074,6 @@ border-radius: 50%;
 	max-width: 90%;
 	border-radius: 25px;
 	margin: 20px;
-}
-
-
-.testing{
-	min-height: 500px;
-	width: 200%;
-	height: 200%;
-	margin-bottom: -100%;
-	margin-left: -100%;
-
-	background-color: #eda735;
-	border: none;
-	border-radius: 80%;
 }
 
 .tcppylist{
