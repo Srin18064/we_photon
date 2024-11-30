@@ -112,7 +112,7 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .header {
 	color: #ffffff;
-	background-color: #d7d1c5;
+	background-color: #eda735;
 	padding: 10px 0;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -126,6 +126,7 @@ blockquote {
 	min-height: 100%;
 	position: relative;
 	color: #fff;
+	background: linear-gradient(0deg, #d7d1c5, #eda735);
 }
 .banner-image {
 	vertical-align: middle;
@@ -528,11 +529,11 @@ padding: 10px 0;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
-	color: #DB0A61;
+	color: #194f26;
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-	color: #DB0A61;
+	color: aquamarine;
 }
 
 /* carousel */
@@ -752,20 +753,20 @@ border-radius: 50%;
 	list-style: none;
 	text-align: center;
 	margin: 15px 0;
-}
-.social-links li {
+  }
+  .social-links li {
 	margin: 10px 10px 10px 0;
 	display: inline-block;
 	font-size: 36px;
-}
-.social-links li a {
-	color: #BBBBBB;
+  }
+  .social-links li a {
+	color: #000000;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
-	border: 1px solid #D0D0D0;
+	border: 1px solid #d7d1c5;
 	width: 52px;
 	height: 52px;
 	display: inline-block;
@@ -774,39 +775,45 @@ border-radius: 50%;
 	font-size: 26px;
 	text-align: center;
 	padding: 4px;
-}
-.social-links li.twitter a:hover {
-	color: #55acee;
+  }
+  .social-links li.twitter a:hover {
+	color: #000000;
 	background-color: #fff;
-}
-.social-links li.skype a:hover {
-	color: #000;
+	border: 1px solid #000000;
+  }
+  .social-links li.skype a:hover {
+	color: #00aff0;
 	background-color: #fff;
-}
-.social-links li.linkedin a:hover {
+	border: 1px solid #00aff0;
+  }
+  .social-links li.linkedin a:hover {
 	color: #0976b4;
 	background-color: #fff;
-}
-.social-links li.googleplus a:hover {
+	border: 1px solid #0976b4;
+  }
+  .social-links li.googleplus a:hover {
 	color: #dd4b39;
 	background-color: #fff;
-}
-.social-links li.youtube a:hover {
+	border: 1px solid #dd4b39;
+  }
+  .social-links li.youtube a:hover {
 	color: #b31217;
 	background-color: #fff;
-}
-.social-links li.flickr a:hover {
+	border: 1px solid #b31217;
+  }
+  .social-links li.flickr a:hover {
 	color: #ff0084;
 	background-color: #fff;
-}
-.social-links li.facebook a:hover {
+  }
+  .social-links li.facebook a:hover {
 	color: #3b5998;
 	background-color: #fff;
-}
-.social-links li.pinterest a:hover {
+	border: 1px solid #3b5998;
+  }
+  .social-links li.pinterest a:hover {
 	color: #cb2027;
 	background-color: #fff;
-}
+  }
 
 /* Isotope Items
 ---------------------------------- */
@@ -1057,7 +1064,7 @@ border-radius: 50%;
 
 
 .banner-image{
-	background-color: #d7d1c5;
+	background:linear-gradient(45deg, #d7d1c5, #eda735);
 }
 
 /* services section */
