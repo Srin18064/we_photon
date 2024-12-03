@@ -9,6 +9,7 @@ body {
 }
 .brand {
 	font-family: 'Raleway', sans-serif;
+	color: #000;
 }
 html,
 body {
@@ -342,6 +343,17 @@ text-align:center;
 .hero-caption p{
 
 }
+
+.intro{
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #000;
+	color: #fff;
+	padding: 20px;
+	border-radius: 20px;
+
+}
 /* Template Components
 ----------------------------------------------------------------------------- */
 /* Buttons
@@ -673,6 +685,7 @@ padding: 10px 0;
 }
 .fixed-header-on .brand {
 	font-size: 24px;
+	color: #000;
 }
 .fixed-header-on .logo {
 	-webkit-transform: scale(0.8);
@@ -720,7 +733,7 @@ padding: 10px 0;
 	padding: 10px 0;
 }
 .brand a {
-	color: #ffffff;
+	color: #000;
 }
 .brand a:hover {
 	text-decoration: none;
@@ -934,7 +947,9 @@ border-radius: 50%;
 	list-style-type: none;
 	/* background-color: #eda735; */
 	align-items: center;
-	margin: 2%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 	border: transparent;
 	border-radius: 5px;
 	/* box-shadow: 0 0 10px 5px rgba(0,0,10,0.3); */
@@ -943,7 +958,7 @@ border-radius: 50%;
 
 .our-partners li{
 	display: inline-block;
-	width: 8%;
+	width: 9%;
 	padding: 1%;
 	align-items: center;
 	margin: 1%;
