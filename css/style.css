@@ -125,7 +125,7 @@ blockquote {
 	height: 100%;
 	min-height: 100%;
 	position: relative;
-	color: #fff;
+	color: #000;
 	background: linear-gradient(0deg, #d7d1c5, #eda735);
 }
 .banner-image {
