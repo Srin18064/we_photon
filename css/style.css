@@ -5,7 +5,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Tinos", serif;
+	font-weight: 500;
+	font-style: normal;
 }
 .brand {
 	font-family: 'Raleway', sans-serif;
@@ -56,6 +58,7 @@ h6 {
 }
 p{
 	text-align: justify;
+	font-weight: 500;
 }
 h1 span,
 h2 span,
@@ -149,7 +152,8 @@ blockquote {
 }
 .banner-caption {
 	position: absolute;
-	top: 50%;
+	text-align: justify;
+	top: 20%;
 	width: 100%;
 	z-index: 2;
 	background-image: url('./images/banner1.png');
@@ -327,6 +331,21 @@ padding: 70px 0;
 .banner-caption h1 {
 	font-size: 60px;
 }
+.banner-text{
+	text-align: center;
+}
+
+.coda-extrabold {
+	font-family: "Coda", system-ui;
+	font-weight: 800;
+	font-style: normal;
+}
+.coda-regular {
+	font-family: "Coda", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
 .footer h1{
 color:#fff;
 }
@@ -1088,7 +1107,7 @@ border-radius: 50%;
 }
 
 .yellow_bg{
-	margin-top: 10%;
+
 }
 
 /* services section */
@@ -1125,15 +1144,17 @@ border-radius: 50%;
 
 /* benifits of digital marketing */
 #sec-bdm{
-	margin: 1%;
-	width: 98%;
+	/* margin: 1%; */
+	width: 80%;
 	border-radius: 5px;
 	box-shadow: 0 0 5px 2px rgba(0,0,10,0.3);
+	position: relative;
 	text-align: center;
 }
 
 #bdm{
 	display: flex;
+	position: relative;
 	text-align: center;
 	align-items: center;
 	
