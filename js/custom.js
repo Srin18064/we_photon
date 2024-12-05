@@ -6,7 +6,8 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('background: linear-gradient(25deg, #d7d1c5, #eda735);');
+		// $(".banner-image").backstretch('images/banner1.png');
+		// $(".banner-image").offset
 		
 		// Fixed header
 		//-----------------------------------------------
