@@ -1,13 +1,13 @@
-/* Author:WebThemez
- * Author URI:http://webthemez.com
- * License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
+/* Author:WePhoton
+ * Author URl:https://www.wephoton.in
+ * 
  */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
 body {
-	font-family: "Tinos", serif;
-	font-weight: 500;
-	font-style: normal;
+	font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .brand {
 	font-family: 'Raleway', sans-serif;
@@ -136,11 +136,11 @@ blockquote {
 	color: #000;
 	background: linear-gradient(0deg, #d7d1c5, #eda735);
 }
-.banner-image{
+/* .banner-image{
 	vertical-align: baseline;
 	min-height: 100%;
 	width: 100%;
-}
+} */
 .banner:after {
 	position: absolute;
 	top: 0;
@@ -276,6 +276,12 @@ font-weight: 600;
 transition: background 0.3s, border-color 0.3s;
 margin-top:20px;
 }
+.contact-form{
+	align-items: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
 button.cta-button:hover{
 background:#fff;
 color:#000;
@@ -333,6 +339,13 @@ padding: 70px 0;
 }
 .banner-text{
 	text-align: center;
+	color: #000;
+	line-height: 180%;
+}
+.ban_img{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .coda-extrabold {
@@ -1177,7 +1190,7 @@ border-radius: 50%;
 	justify-items: center;
 	color: #fff;
 	margin: 1%;
-	background-image: url("../images/brandbuilding.jpg");
+	/* background-image: url("../images/brandbuilding.jpg"); */
 }
 #global-reach{
 	background-color: #949494;
