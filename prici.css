@@ -108,10 +108,12 @@ button{
   align-items: center;
   text-align: center;
   vertical-align: middle;
+  padding: 15px;
 }
 
 .foundersinfo{
-  margin-top: 120px;
+  padding-top: 120px;
+  background: linear-gradient(0deg, #d7d1c5, #eda735);
 }
 
 .title{
@@ -168,4 +170,14 @@ h2{
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.linkedinbtn{
+  margin: 10px;
+  font-size: large;
+  font-weight: 300;
+  background-color: #000;
+  padding: 15px;
+  border-radius: 16px;
+  margin: 10px;
 }

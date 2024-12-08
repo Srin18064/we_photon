@@ -402,12 +402,18 @@ text-align:center;
 	min-width: 160px;
 	text-align: center;
 	border-radius: 0;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+}
+
+.btn-contact{
+	background-color: #d7d1c5;
+	border: none;
+	border-radius: 15px;
 }
 .btn-default {
 	color: #FFFFFF;
@@ -651,6 +657,14 @@ padding: 10px 0;
     margin-right: 10px;
 }
 
+.barriecito-regular {
+	font-family: "Barriecito", system-ui;
+	font-weight: 400;
+	font-size: 32px;
+	font-style: normal;
+  }
+
+  
 
 
 /**
@@ -1004,8 +1018,32 @@ border-radius: 50%;
 
 
 .whyrs-img{
-	width: 20%;
-	height: 52px;
+	min-height: 100x;
+	min-width: 100px;
+	width: 100px;
+	height: 100px;
+	margin-left: 15px;
+}
+
+.reason{
+	background-color: #000;
+	color: #000;
+	min-height: 300px;
+	padding: 10px;
+	border-radius: 15px;
+	margin-top: 20px;
+}
+.reason1{
+	background-color: #d3f1df;
+}
+.reason2{
+	background-color: #d4ebf8;
+}
+.reason3{
+	background-color: #e5e3d4;
+}
+.reason4{
+	background-color: #b3c8cf;
 }
 
 .whyrs1{
@@ -1158,23 +1196,21 @@ border-radius: 50%;
 /* benifits of digital marketing */
 #sec-bdm{
 	/* margin: 1%; */
-	width: 80%;
-	border-radius: 5px;
-	box-shadow: 0 0 5px 2px rgba(0,0,10,0.3);
+	width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+	/* border-radius: 5px;
+	box-shadow: 0 0 5px 2px rgba(0,0,10,0.3); */
 	position: relative;
 	text-align: center;
 }
 
 #bdm{
-	display: flex;
-	position: relative;
-	text-align: center;
-	align-items: center;
+	min-height: 95%;
 	
 }
 
 #bdm-h{
-	height: 80px;
 	margin-top: 15px;
 }
 

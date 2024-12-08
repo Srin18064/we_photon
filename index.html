@@ -22,10 +22,10 @@
 		<link href="css/custom.css" rel="stylesheet">
 
 		<!-- font import -->
+		 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+		<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Coda:wght@400;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
 			<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
 		  </svg>
@@ -87,9 +87,9 @@
 												<li><a href="#about">About</a></li>
 												<li><a href="#services">Services</a></li>
 												
-												<li><a href="#portfolio">Portfolio</a></li>
-												<li><a href="pricing.html">Price</a></li>
-												<li><a href="prici.html">Contact</a></li>
+												<!-- <li><a href="#portfolio">Portfolio</a></li> -->
+												<li><a href="pricing.html">Pricing</a></li>
+												<li><a href="prici.html" id="btn-contact">Contact</a></li>
 											</ul>
 										</div>
 
@@ -117,7 +117,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<!-- <h1 class="banner-text coda-extrabold">WePhoton</h1> -->
-							<h2 class="banner-text coda-regular" style="color: black;">A creative <br> <span style="color: white;">DIGITAL MARKETING <BR>COMPANY </BR></span>From future <br> "Innovation is our pledge!"</h2>
+							<h2 class="banner-text coda-regular" style="color: black;">A creative <br> <span class="barriecito-regular" style="color: white;">DIGITAL MARKETING <BR>COMPANY </BR></span>From future <br> "Innovation is our pledge!"</h2>
 							<div class="padding-top60 contact-form">
 								<button class="btn cta-button" onclick="repricing()">Let's start</button>
 							</div>
@@ -277,7 +277,10 @@
 			<section id="sec-bdm">
 				<br>
 				<h2 id="bdm-h">Benifits of Digital Marketing</h2>
-			<div id="bdm">
+				<div>
+					<img src="./images/benfits.png" alt="">
+				</div>
+			<!-- <div id="bdm">
 				<div id="brand-building"><img src="./images/brandbuilding.jpg" alt=""></div>
 				<div id="global-reach"><h2 class="bbm-p">Global Reach</h2></div>
 				<div id="cost-effective"><h2 class="bbm-p">Cost Effective</h2></div>
@@ -286,7 +289,7 @@
 				<div id="higher-conversion"><h2 class="bbm-p">Higher Conversion Rate</h2></div>
 				<div id="realtime-insight"><h2 class="bbm-p">Real-time Insight</h2></div>
 
-			</div>
+			</div> -->
 			</section>
 			
 		<!-- section end -->
@@ -390,36 +393,36 @@
 					<div class="col-md-4">
 						<h2 style="text-align: center; margin-left: 20px;">Why our clients Choose Us as a Partner!</h2>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" style="margin-bottom: 0;">
 						<div class="whyrs2">
-							<div>
+							<div class="reason reason1">
 								<img src="./images/expertise.png" alt="" class="whyrs-img">
 								<h3>Expertise and Specialization</h3>
-								<p>across 10 years we are working in this field</p>
+								<p>Access to a team with expertise in various marketing disciplines, ensuring your campaigns are well-rounded and effective.</p>
 							</div>
-							<div>
+							<div class="reason reason2">
 								<img src="./images/scale.png" alt="" class="whyrs-img">
 								<h2>Scalability and Flexibility</h2>
-								<p>Whenever you're a small startup or a lage corparate</p>
+								<p>Whenever you're a small startup or a lage corporation, we can help you scale your services to meet your needs.</p>
 							</div>
 							
 							
 						</div>
-						<div class="space"></div>
+						<!-- <div class="space"></div> -->
 					</div>
 					
-					<div class="col-md-4">
+					<div class="col-md-4" style="margin-top: 0;">
 				
 						<div class="whyrs3">
-							<div>
+							<div class="reason reason3">
 								<img src="./images/pres.png" alt="" class="whyrs-img">
 								<h3>Fresh prespecives</h3>
-								<p>we trying our best outcome for your prespective</p>
+								<p>we trying our best outcome for your prespective to your brand.This fresh perspective can help you stay ahead of competitors and adapt to changing market trends.</p>
 							</div>
-							<div>
+							<div class="reason reason4">
 								<img src="./images/optimis.png" alt="" class="whyrs-img">
 								<h3>Resource optimisation</h3>
-								<p>increased of hiring and traininga an new</p>
+								<p>Instead of hiring and training an in-house team, you can tao into the agency's existing infrastructure, saving both time and money.</p>
 							</div>
 						</div>
 					</div>
@@ -476,10 +479,10 @@
 										<h2>Get in Touch</h2>
 										<hr>
 									</div>
-									<input type="text" name="name" placeholder="your Name" class="contact_input" required>
-									<input type="email" name="email" placeholder="your Email" class="contact_input" required>
+									<input type="text" name="name" placeholder="Name" class="contact_input" required>
+									<input type="email" name="email" placeholder="Email" class="contact_input" required>
 									<input type="tel" name="Phone" placeholder="Mobile no" class="contact_input" required>
-									<textarea type="text" name="message" placeholder="your message" class="contact_input" required></textarea>
+									<textarea type="text" name="message" placeholder="message" class="contact_input" required></textarea>
 									<button type="submit"> submit</button>
 			
 								</form>
@@ -495,14 +498,22 @@
 			<!-- .subfooter start --> 
 			<div class="subfooter">
 				<div class="container">
+					<ul>
+						<li></li>
+					</ul>
 
 					<ul class="social-links">
 						<li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-						<li class="googleplus"><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li class="skype"><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
+						<li class="twitter"><a target="_blank" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+								<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+							  </svg>
+						</i></a></li>
+						<li class="googleplus"><a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+						</a></li>
+						<!-- <li class="skype"><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li> -->
 						<li class="linkedin"><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li> 
+						<!-- <li class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>  -->
 					</ul>
 					<ul class="tcppylist">
 						<li><a href="terms&conditions.html">Terms & Conditions</a></li>
@@ -511,7 +522,7 @@
 				
 					<div class="row">
 						<div class="col-md-12">
-							<p class="text-center">Copyright © 2024 <a target="_blank" href="http://wephoton.com">wephoton.in</a>.</p>
+							<p class="text-center">Copyright © 2024 <a target="_blank" href="https://www.wephoton.in">wephoton.in</a></p>
 						</div>
 					</div>
 				</div>
