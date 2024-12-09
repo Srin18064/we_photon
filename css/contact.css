@@ -238,209 +238,114 @@
    font-size: 12px;
  }
  
-form{
-  background-color: #eda735;
-  color: #000;
-  margin-top: 120px;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  border-radius: 50px;
-  padding: 20px;
-}
-   
-   .cbxtags{
-     text-align: center;
-     background-color: #eda735;
-     border: none;
-     border-radius: 10px;
-   }
-   .cbxtags ul
-   {
-     list-style: none;
-     padding: 20px;
-   }
-   
-   .cbxtags li{
-      display: inline;
-   }
-   
-   .cbxtags li label{
-     display: inline-block;
-       background-color: rgba(255, 255, 255, .9);
-       border: 2px solid rgba(139, 139, 139, .3);
-       color: #adadad;
-       border-radius: 25px;
-       white-space: nowrap;
-       margin: 3px 0px;
-       -webkit-touch-callout: none;
-       -webkit-user-select: none;
-       -moz-user-select: none;
-       -ms-user-select: none;
-       user-select: none;
-       -webkit-tap-highlight-color: transparent;
-       transition: all .2s;
-   }
-   
-   .cbxtags li label{
-      padding: 8px 12px;
-       cursor: pointer;
-   }
-   
-   .cbxtags li label::before {
-       display: inline-block;
-       font-style: normal;
-       font-variant: normal;
-       text-rendering: auto;
-       -webkit-font-smoothing: antialiased;
-       font-family: "Font Awesome 5 Free";
-       font-weight: 900;
-       font-size: 12px;
-       padding: 2px 6px 2px 2px;
-       content: "+";
-       transition: transform .3s ease-in-out;
-   }
-   
-   
-   .cbxtags li input[type="checkbox"]:checked + label::before {
-       content: none;
-       transform: rotate(-360deg);
-       transition: transform .3s ease-in-out;
-   }
-   
-   .cbxtags li input[type="checkbox"]:checked + label {
-       border: 2px solid #1bdbf8;
-       background-color: #12bbd4;
-       color: #fff;
-       transition: all .2s;
-   }
-   
-   .cbxtags li input[type="checkbox"] {
-     display: absolute;
-   }
-   .cbxtags li input[type="checkbox"] {
-     position: absolute;
-     opacity: 0;
-   }
-   .cbxtags li input[type="checkbox"]:focus + label {
-     border: 2px solid #e9a1ff;
-   }
-   
-   
-   .title{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-   }
-  
-   
-   h2{
-       font-weight: 500;
-       font-size: 40px;
-       color: black;
-       margin-bottom: 5px;
-   }
-   
-.contact_input{
-    width: 80%;
-    height: 50px;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-    text-align: justify;
-    padding-left: 25px;
-    font-weight: 500 ;
-    color: #d7d1c5;
-    border-radius: 50px;
+.policies{
+    margin-top: 80px;
 }
 
-.contact_right textarea{
-    height: 140px;
-    padding-top: 15px;
-    border-radius: 20px;
+.wephoton{
+    /* color: #eda735; */
+    font-weight: 600;
+    font-style: italic;
+    font-size: medium;
+
 }
 
-.contact_input:focus{
-    border: 2px solid aquamarine;
+.form-control{
+	border: grey;
+	border-radius: 5px;
 }
 
-.contact_input::placeholder{
-  display: block;
-  padding: 10px;
-  min-width: 80%;
-  width: 80%;
-  text-align: justify;
-  color: #eda735;
+.contact_container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #d7d1c5;
 }
 
-.consec{
-  display: flex;
-  text-align: justify;
-  align-items: center;
-  justify-content: space-evenly;
+.contact{
+	background-color: #eda735;
+	color: #000;
+	border: none;
+	border-radius: 50px;
+	padding: 20px;
 }
 
-.contact-left{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  min-width: 48%;
-  width: 48%;
+.contact_right{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 20px;
+	/* margin: 2%; */
+	padding: 20px;
+	background-color: #eda735;
+	border-radius: 50px;
 }
 
-.contact-right{
-  position: absolute;
-  min-width: 90%;
-  margin-top: 50px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .contact_left_title h2{
-font-weight: 500;
-font-size: 40px;
-color: black;
-margin-bottom: 5px;
+	font-weight: 500;
+	font-size: 40px;
+	color: black;
+	margin-bottom: 5px;
 }
 
 .contact_left_title hr{
-border: none;
-width: 120px;
-height: 4px;
-margin-left: 10px;
-background-color: black;
-border-radius: 10px;
-margin-bottom: 20px;
+	border: none;
+	width: 120px;
+	height: 4px;
+	margin-left: 10px;
+	background-color: black;
+	border-radius: 10px;
+	margin-bottom: 20px;
 
+}
+
+.contact_input{
+	width: 95%;
+	height: 50px;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	text-align: justify;
+	padding-left: 25px;
+	font-weight: 500 ;
+	color: #d7d1c5;
+	border-radius: 50px;
+}
+
+.contact_right textarea{
+	height: 140px;
+	padding-top: 15px;
+	border-radius: 20px;
+}
+
+.contact_input:focus{
+	border: 2px solid aquamarine;
+}
+
+.contact_input::placeholder{
+	text-align: justify;
+	color: #eda735;
 }
 
 .contact_right button{
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #fff;
-  gap: 10px;
-  border: none;
-  margin-top: 20px;
-  border-radius: 50px;
-  background: black;
-  cursor: pointer;
-  width: fit-content;
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	font-size: 16px;
+	color: #eda735;
+	gap: 10px;
+    margin-top: 20px;
+	border: none;
+	border-radius: 50px;
+	background: black;
+	cursor: pointer;
+
 }
- 
-   @media (max-width:800px) {
-   .contact_input{
-     width: 80vw;
-     align-items: justify;
-   }
-   .contact-right{
-         display: none;
-     }
- 
- } 
- 
+
+.termncon{
+    margin-top: 100px;
+}
  /* footer
  -------------------------------------------------------------------- */
  
@@ -516,9 +421,9 @@ margin-bottom: 20px;
    border: 1px solid #0976b4;
  }
  .social-links li.instagram a:hover {
-   color: #dd3993;
+   color: #dd4b39;
    background-color: #fff;
-   border: 1px solid #dd3993;
+   border: 1px solid #dd4b39;
  }
  .social-links li.youtube a:hover {
    color: #b31217;
@@ -539,3 +444,39 @@ margin-bottom: 20px;
    background-color: #fff;
  }
  
+ .fouimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: none;
+    border-radius: 150px;
+    align-content: center;
+  }
+  
+  .found{
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+  }
+  
+  .foundersinfo{
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background: linear-gradient(0deg, #d7d1c5, #eda735);
+  }
+
+  .foundersinfo h3{
+    margin: 20px;
+  }
+
+  .linkedinbtn{
+    margin: 10px;
+    font-size: large;
+    font-weight: 300;
+    background-color: #000;
+    padding: 15px;
+    border-radius: 16px;
+    margin: 10px;
+  }
