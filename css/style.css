@@ -1326,3 +1326,40 @@ border-radius: 50%;
 	color: #d7d1c5;
 	
 }
+
+.fouimg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border: none;
+	border-radius: 150px;
+	align-content: center;
+  }
+  
+  .found{
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	padding: 15px;
+  }
+  
+  .foundersinfo{
+	padding-top: 120px;
+	padding-bottom: 30px;
+	background: linear-gradient(0deg, #d7d1c5, #eda735);
+  }
+  
+  .foundersinfo h3{
+	margin: 20px;
+  }
+  
+  .linkedinbtn{
+	margin: 10px;
+	font-size: large;
+	font-weight: 300;
+	background-color: #000;
+	padding: 15px;
+	border-radius: 16px;
+	margin: 10px;
+  }
