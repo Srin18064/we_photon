@@ -117,3 +117,27 @@
 function repricing() {
 	location.href="pricing.html";
 }
+
+// script.js
+
+// Get elements
+var popupButton = document.getElementById("popupButton");
+var imagePopup = document.getElementById("imagePopup");
+var closeBtn = document.getElementById("closeBtn");
+
+// Show popup when button is clicked
+popupButton.onclick = function() {
+  imagePopup.style.display = "flex"; // Show the popup
+}
+
+// Close the popup when the close button is clicked
+closeBtn.onclick = function() {
+  imagePopup.style.display = "none"; // Hide the popup
+}
+
+// Close the popup if the user clicks anywhere outside the image
+window.onclick = function(event) {
+  if (event.target === imagePopup) {
+    imagePopup.style.display = "none"; // Hide the popup
+  }
+}

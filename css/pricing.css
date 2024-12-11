@@ -113,7 +113,7 @@
  ----------------------------------------------------------------------------- */
  .header {
    color: #ffffff;
-   background-color: rgba(0, 0, 0, 1);
+   background-color: #eda735;
    padding: 10px 0;
    -webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -144,7 +144,7 @@
  }
  .main-navigation .navbar-default .navbar-nav > li > a:hover,
  .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-   color: #DB0A61;
+   color: aquamarine;
  }
  
  
@@ -177,7 +177,7 @@
  /* Fixed Header
  ----------------------------------------------------------------------------- */
  .fixed-header-on .header {
-   background-color: rgba(0, 0, 0, 0.95);
+   background-color: #eda735;
    padding: 5px 0;
  }
  .fixed-header-on .brand {
@@ -447,6 +447,7 @@ margin-bottom: 20px;
  .tcppylist{
      list-style: none;
      text-align: center;
+     padding: 0px;
  }
  
  .tcppylist li{
@@ -520,7 +521,7 @@ margin-bottom: 20px;
    background-color: #fff;
    border: 1px solid #dd3993;
  }
- .social-links li.youtube a:hover {
+ .social-links li.YouTube a:hover {
    color: #b31217;
    background-color: #fff;
    border: 1px solid #b31217;
