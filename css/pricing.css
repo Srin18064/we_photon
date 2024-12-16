@@ -219,6 +219,9 @@
  .logo-section {
    float: left;
  }
+ #logo {
+	width: 40px;
+}
  .brand {
    font-size: 38px;
    -webkit-transition: all 0.3s ease-in-out;

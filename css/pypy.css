@@ -229,6 +229,9 @@
    transition: all 0.3s ease-in-out;
    padding: 10px 0;
  }
+ #logo {
+	width: 40px;
+}
  .brand a {
    color: #ffffff;
  }
