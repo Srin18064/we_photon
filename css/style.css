@@ -791,6 +791,9 @@ padding: 10px 0;
 .logo-section {
 	float: left;
 }
+#logo {
+	width: 40px;
+}
 .brand {
 	font-size: 38px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1211,6 +1214,28 @@ border-radius: 50%;
 	color: aqua;
 }
 
+.regbtn{
+	display: flex;
+	 list-style: none;
+	 text-align: start;
+	 padding: 0px;
+  }
+  
+  .regbtn li{
+	margin-left: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	 
+  }
+
+  .regbtn li{
+	margin: auto;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	 
+  }
 /* benifits of digital marketing */
 #sec-bdm{
 	/* margin: 1%; */
@@ -1427,5 +1452,6 @@ border-radius: 50%;
 	padding: 12px;
 	border-radius: 50px;
 	margin: auto;
+	border: none;
   }
   

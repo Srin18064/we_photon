@@ -360,6 +360,11 @@
      margin: 10px;
      
  }
+
+ .tcppylist li:hover{
+	font-weight: 600;
+	color: aqua;
+}
  
  .termncon{
      margin-top: 50px;
