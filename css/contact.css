@@ -176,6 +176,11 @@
  
  /* Fixed Header
  ----------------------------------------------------------------------------- */
+
+ .container{
+  width: auto;
+  margin: 0px;
+ }
  .fixed-header-on .header {
    background-color: #eda735;
    padding: 5px 0;
@@ -489,3 +494,9 @@
     border-radius: 16px;
     margin: 10px;
   }
+
+.panel-group{
+  max-width: 80%;
+  width: 80%;
+  margin: auto;
+}

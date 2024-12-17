@@ -281,7 +281,7 @@ background: #eda735;
 button.cta-button {
 font-size: 16px;
 line-height: 18px;
-border: 1px solid #fff;
+/* border: 1px solid #fff; */
 padding: 20px 42px;
 border-radius: 4px;
 font-family: 'Raleway';
@@ -455,31 +455,46 @@ text-align:center;
 	padding: 0;
 	outline: none;
 	border: none;
+	background-color: #d7d1c5;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	-o-border-radius: 0;
 	border-radius: 0;
 	width: 100%;
 }
-.panel-default > .panel-heading + .panel-collapse > .panel-body {
+.panel-default > .-heading + .panel-collapse > .panel-body {
 	border: 1px solid #f0f0f0;
 	border-top: none;
-	background-color: #fafafa
+	border-radius: 15px;
+	background-color: #d7d1c5;
+}
+
+.panel-body{
+	background-color: #d7d1c5;
+	border-radius: 15px;
+
+}
+
+.panel-collapse{
+	background-color: #d7d1c5;
 }
 .panel-heading a {
 	font-weight: 400;
 	padding: 12px 35px 12px 15px;
 	display: inline-block;
 	width: 100%;
-	background-color: #fff;
-	color: #DB0A61;
+	background: transparent;
+	background-color: #d7d1c5;
+	color: #000;
 	position: relative;
 	text-decoration: none;
 	border: #ECECEC 1px solid;
+	border-radius: 20px;
 }
 .panel-heading a.collapsed {
 	color: #333333;
-	background-color: #FAFAFA;
+	background: transparent;
+	background-color: #d7d1c5;
 }
 .panel-heading a:after {
 	font-family: "FontAwesome";
@@ -497,8 +512,8 @@ text-align:center;
 }
 .panel-heading a:hover {
 	text-decoration: none;
-	background-color: #FFFFFF;
-	color: #DB0A61;
+	background-color: #f0f0f0;
+	color: #eda735;
 }
 .panel-title a i {
 	padding-right: 10px;
@@ -1455,3 +1470,21 @@ border-radius: 50%;
 	border: none;
   }
   
+  #backToTop {
+	display: none; /* Hidden by default */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 10px;
+}
+#backToTop:hover {
+	background-color: #555;
+}
