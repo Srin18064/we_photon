@@ -1032,12 +1032,15 @@ border-radius: 50%;
 .our-partners{
 	list-style-type: none;
 	/* background-color: #eda735; */
+	padding: 0%;
 	align-items: center;
-	width: 90%;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	border: transparent;
 	border-radius: 5px;
+	padding: auto;
+	
 	/* box-shadow: 0 0 10px 5px rgba(0,0,10,0.3); */
 	
 }
@@ -1464,7 +1467,7 @@ border-radius: 50%;
 	color: #000;
 	background-color: #eda735;
 	display: block;
-	padding: 12px;
+	padding: 5px 15px 5px 15px;
 	border-radius: 50px;
 	margin: auto;
 	border: none;
