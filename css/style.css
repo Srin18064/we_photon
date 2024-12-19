@@ -807,7 +807,7 @@ padding: 10px 0;
 	float: left;
 }
 #logo {
-	width: 40px;
+	width: 180px;
 }
 .brand {
 	font-size: 38px;
@@ -1034,7 +1034,7 @@ border-radius: 50%;
 	/* background-color: #eda735; */
 	padding: 0%;
 	align-items: center;
-	width: 85%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	border: transparent;
@@ -1047,7 +1047,7 @@ border-radius: 50%;
 
 .our-partners li{
 	display: inline-block;
-	width: 10%;
+	width: 9.5%;
 	padding: 1%;
 	align-items: center;
 	margin: 1%;
@@ -1181,7 +1181,7 @@ border-radius: 50%;
 	padding: 15px 30px;
 	font-size: 16px;
 	margin-top: 15px;
-	color: #eda735;
+	color: #fff;
 	gap: 10px;
 	border: none;
 	border-radius: 50px;
@@ -1467,7 +1467,7 @@ border-radius: 50%;
 	color: #000;
 	background-color: #eda735;
 	display: block;
-	padding: 5px 15px 5px 15px;
+	padding: 10px 15px;
 	border-radius: 50px;
 	margin: auto;
 	border: none;
@@ -1482,12 +1482,13 @@ border-radius: 50%;
 	font-size: 20px;
 	border: none;
 	outline: none;
-	background-color: #333;
-	color: white;
+	color: #000;
 	cursor: pointer;
-	padding: 10px 15px;
-	border-radius: 10px;
+	font-size: 20px;
+	padding: 5px 15px;
+	border-radius: 20px;
 }
 #backToTop:hover {
 	background-color: #555;
+	color: #fff;
 }
