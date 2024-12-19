@@ -891,9 +891,9 @@ border-radius: 50%;
 	border: 1px solid #0976b4;
   }
   .social-links li.instagram a:hover {
-	color: #dd4b39;
+	color: #ff0084;
 	background-color: #fff;
-	border: 1px solid #dd4b39;
+	border: 1px solid #ff0084;
   }
   .social-links li.YouTube a:hover {
 	color: #b31217;
@@ -1072,16 +1072,16 @@ border-radius: 50%;
 	margin-top: 20px;
 }
 .reason1{
-	background-color: #d3f1df;
+	background-color: #4EACC6;
 }
 .reason2{
-	background-color: #d4ebf8;
+	background-color: #F67F85;
 }
 .reason3{
-	background-color: #e5e3d4;
+	background-color: #B2DBDB;
 }
 .reason4{
-	background-color: #b3c8cf;
+	background-color: #6A904B;
 }
 
 .whyrs1{
@@ -1465,6 +1465,8 @@ border-radius: 50%;
   /* popup button */
   #popupButton{
 	color: #000;
+	font-weight: 600;
+	font-size: 20px;
 	background-color: #eda735;
 	display: block;
 	padding: 10px 15px;
@@ -1491,4 +1493,18 @@ border-radius: 50%;
 #backToTop:hover {
 	background-color: #555;
 	color: #fff;
+}
+
+
+.subsec{
+	display: flex;
+	flex-direction: column;
+}
+
+.brnimg{
+	width: 45%;
+}
+
+.sub-sec{
+	width: 45%;
 }
