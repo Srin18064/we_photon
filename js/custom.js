@@ -157,3 +157,11 @@ function scrollFunction() {
 function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+function ctoin() {
+	location.href="https://www.linkedin.com/in/srinivasan-mani-349063226/";
+}
+
+function ceoin() {
+	location.href="https://www.linkedin.com/in/thawfeek-m-101715a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
+}

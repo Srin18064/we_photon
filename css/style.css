@@ -1072,16 +1072,16 @@ border-radius: 50%;
 	margin-top: 20px;
 }
 .reason1{
-	background-color: #4EACC6;
+	background-color: #9BBFE0;
 }
 .reason2{
-	background-color: #F67F85;
-}
+	background-color: #FBE29F;
+	}
 .reason3{
-	background-color: #B2DBDB;
+	background-color: #C6D68F;
 }
 .reason4{
-	background-color: #6A904B;
+	background-color: #E8A09A;
 }
 
 .whyrs1{
@@ -1419,9 +1419,9 @@ border-radius: 50%;
 	font-size: large;
 	font-weight: 300;
 	background-color: #000;
-	padding: 15px;
-	border-radius: 16px;
-	margin: 10px;
+	padding: 10px;
+	border-radius: 30px;
+	margin: 8px;
   }
 
 
@@ -1498,7 +1498,7 @@ border-radius: 50%;
 
 .subsec{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 .brnimg{
@@ -1507,4 +1507,44 @@ border-radius: 50%;
 
 .sub-sec{
 	width: 45%;
+	list-style: none;
 }
+
+#subform{
+	position: relative;
+	display: inline-block;
+}
+
+#subform input{
+	padding-right: 100px;
+	margin-top: 5px;
+	margin-left: 25px;
+
+}
+
+#subform button{
+	position: absolute;
+	padding: 15px, 5px;
+	top: 15px;
+	right: 10px;
+	border: none;
+	background-color: #eda735;
+	margin: 3px;
+	border-radius: 15px;
+
+	cursor: pointer;
+}
+
+.float-container {
+    /* border: 3px solid #fff; */
+    padding: 20px;
+}
+.float-child {
+    width: 50%;
+    float: left;
+	height: 200px;
+    padding: 20px;
+	align-items: center;
+	text-align: center;
+    /* border: 2px solid red; */
+}  
