@@ -1416,10 +1416,8 @@ border-radius: 50%;
   
   .linkedinbtn{
 	margin: 10px;
-	font-size: large;
-	font-weight: 300;
 	background-color: #000;
-	padding: 10px;
+	padding: 7px 5px;
 	border-radius: 30px;
 	margin: 8px;
   }
@@ -1516,21 +1514,25 @@ border-radius: 50%;
 }
 
 #subform input{
-	padding-right: 100px;
+	padding-right: 20px;
 	margin-top: 5px;
-	margin-left: 25px;
-
+	margin-left: 20px;
+	border-radius: 10px;
+	padding-left: 20px;
 }
 
 #subform button{
 	position: absolute;
 	padding: 15px, 5px;
-	top: 15px;
-	right: 10px;
+	top: 10px;
+	width: 40%;
+	height: 36px;
+	right: 7px;
+	font-size: 12px;
 	border: none;
 	background-color: #eda735;
 	margin: 3px;
-	border-radius: 15px;
+	border-radius: 5px;
 
 	cursor: pointer;
 }
@@ -1543,8 +1545,13 @@ border-radius: 50%;
     width: 50%;
     float: left;
 	height: 200px;
-    padding: 20px;
+    padding: 10px;
 	align-items: center;
 	text-align: center;
     /* border: 2px solid red; */
 }  
+
+.line{
+	background-color: #000;
+	height: 1px;
+}
