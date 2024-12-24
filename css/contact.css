@@ -316,7 +316,7 @@
 	text-align: justify;
 	padding-left: 25px;
 	font-weight: 500 ;
-	color: #d7d1c5;
+	color: #333333;
 	border-radius: 50px;
 }
 
@@ -499,4 +499,39 @@
   max-width: 80%;
   width: 80%;
   margin: auto;
+}
+
+#subform{
+	position: relative;
+	width: 90%;
+
+	display: inline-block;
+}
+
+#subform h2{
+	margin-left: 6%;
+}
+
+#subform input{
+	padding-right: 20px;
+	margin-top: 5px;
+	margin-left: 20px;
+	border-radius: 30px;
+	padding-left: 20px;
+}
+
+#subform button{
+	position: absolute;
+	padding: 15px, 5px;
+	top: 10px;
+	width: 40%;
+	height: 36px;
+	right: 7px;
+	font-size: 12px;
+	border: none;
+	background-color: #eda735;
+	margin: 3px;
+	border-radius: 20px;
+
+	cursor: pointer;
 }

@@ -1156,7 +1156,7 @@ border-radius: 50%;
 	text-align: justify;
 	padding-left: 25px;
 	font-weight: 500 ;
-	color: #d7d1c5;
+	color: #333333;
 	border-radius: 50px;
 }
 
@@ -1510,15 +1510,22 @@ border-radius: 50%;
 
 #subform{
 	position: relative;
+	width: 90%;
+
 	display: inline-block;
+}
+
+#subform h2{
+	margin-left: 6%;
 }
 
 #subform input{
 	padding-right: 20px;
 	margin-top: 5px;
 	margin-left: 20px;
-	border-radius: 10px;
+	border-radius: 30px;
 	padding-left: 20px;
+	color: #000;
 }
 
 #subform button{
@@ -1532,24 +1539,11 @@ border-radius: 50%;
 	border: none;
 	background-color: #eda735;
 	margin: 3px;
-	border-radius: 5px;
+	border-radius: 20px;
 
 	cursor: pointer;
 }
 
-.float-container {
-    /* border: 3px solid #fff; */
-    padding: 20px;
-}
-.float-child {
-    width: 50%;
-    float: left;
-	height: 200px;
-    padding: 10px;
-	align-items: center;
-	text-align: center;
-    /* border: 2px solid red; */
-}  
 
 .line{
 	background-color: #000;
