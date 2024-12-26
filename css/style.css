@@ -1,5 +1,5 @@
 /* Author:WePhoton
- * Author URl:https://www.wephoton.in
+ * Author URl:https://wephoton.in
  * 
  */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
@@ -1532,7 +1532,7 @@ border-radius: 50%;
 	position: absolute;
 	padding: 15px, 5px;
 	top: 10px;
-	width: 40%;
+	/* width: 40%; */
 	height: 36px;
 	right: 7px;
 	font-size: 12px;
