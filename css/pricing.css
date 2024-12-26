@@ -571,7 +571,7 @@ margin-bottom: 20px;
 	position: absolute;
 	padding: 15px, 5px;
 	top: 10px;
-	width: 40%;
+	/* width: 40%; */
 	height: 36px;
 	right: 7px;
 	font-size: 12px;
