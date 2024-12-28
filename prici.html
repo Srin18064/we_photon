@@ -3,360 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar with Auto-hide</title>
+    <title>Contact Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
         }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
+        .contact-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .navbar a {
-            float: left;
+        .contact-container h2 {
+            margin-bottom: 20px;
+        }
+        .contact-container label {
             display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
-        .navbar .menu-icon {
-            display: none;
-            float: right;
+        .contact-container input,
+        .contact-container textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 16px;
         }
-        .navbar.responsive {
-            position: relative;
-        }
-        .navbar.responsive a.icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .navbar.responsive .menu-items {
-            display: block;
+        .contact-container input[type="submit"] {
             width: 100%;
-            text-align: left;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
         }
-        .menu-items {
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        .menu-items li {
-            display: block;
-        }
-        @media screen and (max-width: 600px) {
-            .menu-items {
-                display: none;
-                flex-direction: column;
-            }
-            .navbar .menu-icon {
-                display: block;
-                cursor: pointer;
-            }
+        .contact-container input[type="submit"]:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-<div class="navbar" id="navbar">
-    <a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
-    <ul class="menu-items">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <form action="contact.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
 </div>
-
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width: 85%; margin: auto;">
-    <h2>FAQ's</h2>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    1. What services does WePhoton offer?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-                WePhoton specializes in a range of digital marketing services, including SEO, social media marketing, content marketing, pay-per-click advertising, email marketing, and website development.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    2. How can WePhoton help my business?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body">
-                WePhoton helps businesses increase their online visibility, drive traffic to their websites, generate leads, and improve conversion rates through tailored digital marketing strategies.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFour">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                    4. What sets WePhoton apart from other digital marketing agencies?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="panel-body">
-                WePhoton stands out due to our personalized approach, data-driven strategies, continuous optimization, and commitment to delivering measurable results for our clients.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFive">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                    5. How do you measure success in your campaigns?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-            <div class="panel-body">
-                We measure success through various key performance indicators (KPIs), including website traffic, lead generation, conversion rates, return on investment (ROI), and social media engagement.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingSix">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                    6. Can you provide case studies or references?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-            <div class="panel-body">
-                Yes, we are happy to provide case studies and references upon request, showcasing our successful campaigns and the impact we’ve had on our clients' businesses.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingSeven">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
-                    7. How long does it take to see results from digital marketing?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-            <div class="panel-body">
-                The timeline for seeing results varies depending on the strategies used, competition, and goals. Generally, you can expect to see initial results within 3 to 6 months.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingEight">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
-                    8. What is your pricing structure?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-            <div class="panel-body">
-                Our pricing structure varies based on the services you choose, the scope of your project, and your specific business needs. Contact us for a custom quote.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingNine">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
-                    9. Do you offer ongoing support and maintenance?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-            <div class="panel-body">
-                Yes, WePhoton offers ongoing support and maintenance services to ensure that your digital marketing strategies continue to evolve and adapt to market changes.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTen">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                    10. How can I get started with WePhoton?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-            <div class="panel-body">
-                To get started, simply reach out to us via our contact page, and one of our team members will schedule a consultation to discuss your needs and how we can assist you.
-            </div>
-        </div>
-    </div>
-    <!-- <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    3. What industries do you serve?
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
-            </div>
-        </div>
-    </div> -->
-    
-</div>
-
-<form action="" method=" " >
-    <div class="contact_left_title">
-        <h2 class="head2">Get in Touch</h2>
-        <hr>
-    </div>
-    <input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
-    <input type="hidden" name="redirect" value="http://wephoton.in">
-    <input type="text" name="name" placeholder="Name" class="contact_input" required>
-    <input type="email" name="email" placeholder="Email" class="contact_input" required>
-    <input type="tel" name="Phone" placeholder="Mobile no" class="contact_input" required>
-    <textarea type="text" name="Message" placeholder="Message" class="contact_input" required></textarea>
-    <button type="submit"> submit</button>
-
-</form>
-<script>
-function toggleMenu() {
-    var navbar = document.getElementById("navbar");
-    var menuItems = navbar.querySelector(".menu-items");
-    if (menuItems.style.display === "block") {
-        menuItems.style.display = "none";
-        document.body.removeEventListener('click', closeMenu);
-    } else {
-        menuItems.style.display = "block";
-        document.body.addEventListener('click', closeMenu);
-    }
-}
-
-function closeMenu(event) {
-    var navbar = document.getElementById("navbar");
-    if (!navbar.contains(event.target)) {
-        navbar.querySelector(".menu-items").style.display = "none";
-        document.body.removeEventListener('click', closeMenu);
-    }
-}
-
-// Prevent menu from closing when clicking on the menu icon
-document.querySelector('.menu-icon').addEventListener('click', function(event) {
-    event.stopPropagation();
-});
-</script>
 
 </body>
 </html>
