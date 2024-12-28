@@ -6,6 +6,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = htmlspecialchars(trim($_POST['subject']));
     $message = htmlspecialchars(trim($_POST['message']));
     
+    // Validate input data
+    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+        echo "All fields are required.";
+        exit;
+    }
+    
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+    
     // Prepare email
     $to = "form.wephoton@gmail.com"; // Change this to your email address
     $headers = "From: " . $email . "\r\n";
