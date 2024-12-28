@@ -1,0 +1,25 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Custom 404 Error Page
+ErrorDocument 404 /404.html
+
+# Protect the contact form page from direct access
+<Files "contact.php">
+    Order Deny,Allow
+    Deny from all
+    Allow from https://wephoton.in
+</Files>
+
+# Disable Directory Listing
+Options -Indexes
+
+# Deny Access to .htaccess file itself
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
