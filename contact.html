@@ -1,77 +1,519 @@
 <!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
-        }
-        .contact-container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .contact-container h2 {
-            margin-bottom: 20px;
-        }
-        .contact-container label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .contact-container input,
-        .contact-container textarea {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .contact-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .contact-container input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>WePhoton</title>
+		<meta name="description" content="Responsive HTML5 Template">
+		<meta name="author" content="webthemez">
 
-<div class="contact-container">
-    <h2>Contact Us</h2>
-    <form action="contact.php" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
-        <input type="submit" value="Submit">
-    </form>
-</div>
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</body>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon-16x16.png">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet"> 
+		<link href="css/custom.css" rel="stylesheet">
+
+		<!-- font import -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Coda:wght@400;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+			<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+		  </svg>
+	</head>
+
+	<body class="no-trans">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="https://wephoton.in/"><img id="logo" src="images/toplogo.png" alt="Worthy"> </a>
+							</div>
+							<!-- name-and-slogan -->
+							<!-- <div class="logo-section smooth-scroll">
+								<div class="brand"><a href="#banner">   WePhoton</a></div>								
+							</div> -->
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start --> 
+						<div class="header-right">
+
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
+
+								<!-- navbar start --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="https://wephoton.in">Home</a></li>
+												
+												<!-- <li><a href="#portfolio">Portfolio</a></li> -->
+												<li><a href="pricing.html">Pricing</a></li>
+												<li><a href="contact.html" id="btn-contact">Contact Us</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<div class="container" style="margin: 0px; width: auto;">
+			<div class="row foundersinfo">
+				<div class="col-sm-6 found">
+					<img src="./images/founder.png" alt="" class="fouimg">
+					<h2 style="text-align: center; color: black;">Thavfeek</h2>
+					<h3 style="text-align: center;">Founder & CEO</h3>
+					<button class="linkedinbtn" onclick="ceoin()"><img src="./images/cnpgin.png" style="width: 100px; height: 30px;" alt="LinkedIn"></button>
+				</div>
+				<div class="col-sm-6 found">
+					<img src="./images/co-founder.png" alt="" class="fouimg">
+					<h2 style="text-align: center; color: black;">Srinivasan</h2>
+					<h3 style="text-align: center;"> Co-Founder & CTO</h3>
+					<button class="linkedinbtn" onclick="ctoin()"><img src="./images/cnpgin.png" style="width: 100px; height: 30px;" alt="LinkedIn"></button>
+				</div>
+			</div>
+		 </div>
+
+
+
+		 <!-- collapse panel -->
+		 
+		 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width: 85%; margin: auto;">
+			<h2>FAQ's</h2>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							1. What services does WePhoton offer?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						WePhoton specializes in a range of digital marketing services, including SEO, social media marketing, content marketing, pay-per-click advertising, email marketing, and website development.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							2. How can WePhoton help my business?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+						WePhoton helps businesses increase their online visibility, drive traffic to their websites, generate leads, and improve conversion rates through tailored digital marketing strategies.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFour">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+							4. What sets WePhoton apart from other digital marketing agencies?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+					<div class="panel-body">
+						WePhoton stands out due to our personalized approach, data-driven strategies, continuous optimization, and commitment to delivering measurable results for our clients.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFive">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+							5. How do you measure success in your campaigns?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+					<div class="panel-body">
+						We measure success through various key performance indicators (KPIs), including website traffic, lead generation, conversion rates, return on investment (ROI), and social media engagement.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingSix">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+							6. Can you provide case studies or references?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+					<div class="panel-body">
+						Yes, we are happy to provide case studies and references upon request, showcasing our successful campaigns and the impact we’ve had on our clients' businesses.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingSeven">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+							7. How long does it take to see results from digital marketing?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+					<div class="panel-body">
+						The timeline for seeing results varies depending on the strategies used, competition, and goals. Generally, you can expect to see initial results within 3 to 6 months.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingEight">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+							8. What is your pricing structure?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+					<div class="panel-body">
+						Our pricing structure varies based on the services you choose, the scope of your project, and your specific business needs. Contact us for a custom quote.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingNine">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+							9. Do you offer ongoing support and maintenance?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+					<div class="panel-body">
+						Yes, WePhoton offers ongoing support and maintenance services to ensure that your digital marketing strategies continue to evolve and adapt to market changes.
+					</div>
+				</div>
+			</div>
+			<hr class="line" style="color: black;">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTen">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+							10. How can I get started with WePhoton?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+					<div class="panel-body">
+						To get started, simply reach out to us via our contact page, and one of our team members will schedule a consultation to discuss your needs and how we can assist you.
+					</div>
+				</div>
+			</div>
+			<!-- <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							3. What industries do you serve?
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						We serve a variety of industries, including e-commerce, healthcare, technology, finance, and local businesses, tailoring our strategies to fit each sector's unique needs.
+					</div>
+				</div>
+			</div> -->
+			
+		</div>
+
+	
+
+<!-- why section end -->
+		<!-- footer start --> 
+		<footer id="footer">
+
+			<!-- .footer start --> 
+			<div class="footer section">
+								
+				<div class="container contact">
+					<div>
+						<h1 style="color: black; text-align: center;">Get In Touch With Us Today</h1>
+						<p>We are always ready to assist you. Kindly send your details and requirments to us. our support team will contact as soon as possible. Thank you!</p>
+					</div>
+					<div class="space"></div>
+					<div class="row">
+						
+						<div class="col-md-6">
+							<div class="footer-content">
+								
+
+							<div class="widget-content">
+
+								<div class="contact_left_title">
+									<h2>Contact Info</h2>
+									<hr>
+								</div>
+								<br/>
+
+								<p class="contacts"><i class="fa fa-phone"></i> 8939129202</p>
+								
+								<p class="contacts"><i class="fa fa-map-marker"></i>  MMDA Nagar, Chitlapakkam -600064 </p>
+
+								<p class="contacts"><i class="fa fa-envelope"></i> support@wephoton.com</p>
+
+							
+
+							</div>
+
+							</div>
+						</div>
+						
+						<div class="col-md-6 contact_right">
+							<div class="footer-content">
+
+								<form action="https://api.web3forms.com/submit" method="POST" >
+									<div class="contact_left_title">
+										<h2 class="head2">Get in Touch</h2>
+										<hr>
+									</div>
+									<input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
+									<input type="hidden" name="redirect" value="http://wephoton.in/thanks.html">
+									<input type="text" name="name" placeholder="Name" class="contact_input" required>
+									<input type="email" name="email" placeholder="Email" class="contact_input" required>
+									<input type="tel" name="Phone" placeholder="Mobile no" class="contact_input" required>
+									<textarea type="text" name="Message" placeholder="Message" class="contact_input" required></textarea>
+									<button type="submit"> submit</button>
+			
+								</form>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			<!-- .footer end -->
+
+			<!-- .subfooter start --> 
+			<div class="subfooter">
+				<div class="container">
+
+					<div class="row">
+						
+						<div class="col-md-6">
+							<a href="https://wephoton.in" style="width: 250px; margin-top: 25px; margin-left: 10%; margin-right: 10%;">
+								<img src="./images/brand&slogan.png" alt="WePhoton" style="width: 200px; margin: auto;">						
+							</a>
+						</div>
+						
+						<div class="col-md-6 blue">
+						
+							<form action="https://api.web3forms.com/submit" method="POST" id="subform">
+								<input type="hidden" name="access_key" value="2dc1acd0-7625-45ac-800d-039aaf71d0ec">
+								<input type="hidden" name="redirect" value="http://wephoton.in/thanks.html">
+								<input type="email" name="email" placeholder="Email" class="contact_input" id="subinput" required>
+								<button type="submit" id="subbtn"><img src="./images/right-arrow.png" alt="subscribe" style="height: 30px; width: 30px;"></button>
+								<h2 style="color: #000;">Stay Connected!</h2>
+							</form>
+							
+						</div>
+	
+						
+					</div>
+					
+					<ul class="social-links">
+						<li class="facebook"><a target="_blank" href="https://www.facebook.com/profile.php?id=61571233043872&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a></li>
+						<li class="twitter"><a target="_blank" href="https://x.com/Wephoton">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+								<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+							  </svg>
+						</i></a></li>
+						<li class="instagram"><a target="_blank" href="https://www.instagram.com/wephoton.in/profilecard/?igsh=MWVncjR6ZWExeDlmMA=="><i class="fa fa-instagram" aria-hidden="true"></i>
+						</a></li>
+						<li class="pinterest"><a target="_blank" href="https://pin.it/5vlrvH35l"><i class="fa fa-pinterest"></i></a></li>
+						<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/wephoton/"><i class="fa fa-linkedin"></i></a></li>
+						<!-- <li class="YouTube"><a target="_blank" href="#"><i class="fa fa-YouTube"></i></a></li>  -->
+					</ul>
+					<ul class="tcppylist">
+						<li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacypolicies.html">Privacy Policy</a></li>
+					</ul>
+				
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center">Copyright © 2024 <a target="_blank" href="https://wephoton.in">wephoton.in</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .subfooter end -->
+
+		</footer>
+		<!-- footer end -->
+
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	</body>
 </html>
