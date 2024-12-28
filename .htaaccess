@@ -10,9 +10,9 @@ ErrorDocument 404 /404.html
 
 # Protect the contact form page from direct access
 <Files "contact.php">
-    Order Deny,Allow
-    Deny from all
-    Allow from https://wephoton.in
+   <Limit GET POST>
+        Require all granted
+    </Limit>
 </Files>
 
 # Disable Directory Listing
