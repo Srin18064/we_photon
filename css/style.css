@@ -2,15 +2,13 @@
  * Author URl:https://wephoton.in
  * 
  */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
-@import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
 body {
 	font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 .brand {
-	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Raleway', sans-serif; */
 	color: #000;
 }
 html,
@@ -284,7 +282,7 @@ line-height: 18px;
 /* border: 1px solid #fff; */
 padding: 20px 42px;
 border-radius: 4px;
-font-family: 'Raleway';
+font-family: 'barriecito-regular';
 font-weight: 600;
 transition: background 0.3s, border-color 0.3s;
 border-radius: 25px;
@@ -851,6 +849,7 @@ border-radius: 50%;
 	padding: 0;
 	list-style: none;
 	text-align: center;
+	min-height: 20%;
 	margin: 15px 0;
   }
   .social-links li {
@@ -868,6 +867,7 @@ border-radius: 50%;
 	border: 1px solid #d7d1c5;
 	width: 52px;
 	height: 52px;
+	min-width: 32px;
 	display: inline-block;
 	
 	border-radius: 50%;
