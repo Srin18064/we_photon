@@ -477,7 +477,7 @@ text-align:center;
 	background-color: #d7d1c5;
 }
 .panel-heading a {
-	font-weight: 400;
+	font-weight: 500;
 	padding: 12px 35px 12px 15px;
 	display: inline-block;
 	width: 100%;
@@ -516,6 +516,7 @@ text-align:center;
 .panel-title a i {
 	padding-right: 10px;
 	font-size: 20px;
+	font-weight: 500;
 }
 
 /* Pills
