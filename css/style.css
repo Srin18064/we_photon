@@ -167,7 +167,7 @@ blockquote {
 	top: 20%;
 	width: 100%;
 	z-index: 2;
-	/* background-image: url('./images/banner1.png'); */
+	background-image: url('./images/banner1.png');
 }
 .subfooter {
 	background-color: #eda735;
