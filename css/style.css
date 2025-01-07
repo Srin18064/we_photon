@@ -68,7 +68,7 @@ h6 {
 	font-weight: 700;
 }
 p{
-	text-align: justify;
+	text-align: center;
 	font-weight: 500;
 }
 h1 span,
@@ -1119,6 +1119,9 @@ border-radius: 50%;
 	border-radius: 50px;
 	padding: 20px;
 }
+.contacts{
+	text-align: start;
+  }
 
 .contact_right{
 	display: flex;
