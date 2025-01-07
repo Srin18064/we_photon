@@ -3,75 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Fixed Top Navigation Bar</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
         }
-        .contact-container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .contact-container h2 {
-            margin-bottom: 20px;
-        }
-        .contact-container label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .contact-container input,
-        .contact-container textarea {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 25px;
-            font-size: 16px;
-        }
-        .contact-container input[type="submit"] {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eda735;
+            padding: 10px 20px;
+            position: fixed;
             width: 100%;
-            padding: 10px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
+            top: 0;
+            z-index: 1000;
         }
-        .contact-container input[type="submit"]:hover {
-            background-color: #0056b3;
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar .toggle-nav {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .navbar .toggle-nav div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            .navbar .toggle-nav {
+                display: flex;
+            }
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background-color: #333;
+                width: 200px;
+                padding: 10px;
+            }
+            .navbar .nav-links a {
+                margin: 10px 0;
+            }
+        }
+        .navbar.active .nav-links {
+            display: flex;
         }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="width: 60%;"><img src="images/toplogo.png" alt="wephoton" srcset="" style="height: 48px;"></a>
+        <div class="toggle-nav" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-<div class="contact-container">
-    <h2>Contact Us</h2>
-    <form action="contact.php" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
-        <input type="submit" value="Submit">
-    </form>
-</div>
+    <br>
+    <br>
 
+    <div class="container">
+        <form class="pricingform" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e83298f9-5440-4a62-9f60-71975918863c">
+            <input type="hidden" name="redirect" value="http://wephoton.in/thanks.html">
+            <div class="row">
+                <h1 style="color: black;">What services do you need help with? Select all that apply.</h1>
+              <div class="cbxtags col-sm-6" id="digi-mar">
+                <br>
+                <h1 class="title">Digital</h1>
+                <br>
+                <ul>
+                    <li><input type="checkbox" id="cbxppc" 		name="ppc" value="PPC"><label for="cbxppc">PPC AD</label></li>
+                    <li><input type="checkbox" id="cbxseo" 	 	name="SEO" value="SEO" ><label for="cbxseo">Paid SEO</label></li>
+                    <li><input type="checkbox" id="cbxsm" 		name="Social Media" value="Social Media"><label for="cbxsm">Social Media Management</label></li>
+                    <li><input type="checkbox" id="cbxyt" 		name="YouTube" value="YouTube"><label for="cbxyt">YouTube</label></li>
+                    <li><input type="checkbox" id="cbxinflu"	name="Influencer" value="Influencer"><label for="cbxinflu">Influencer</label></li>
+                    <li><input type="checkbox" id="cbxmail"		name="Email" value="Email"><label for="cbxmail">Email & Sms</label></li>
+                    <!-- <li><input type="checkbox" id="cbxsms" 		name="Sms" value="Sms"><label for="cbxsms">Sms</label></li> -->
+                    <li><input type="checkbox" id="cbxwts" 		name="WhatsApp" value="WhatsApp"><label for="cbxwts">WhatsApp</label></li>
+                    <li><input type="checkbox" id="cbxweb" 		name="Website" value="Website"><label for="cbxweb">Website Devlopment</label></li>
+                </ul>
+              </div>
+              <div class="cbxtags col-sm-6" id="digi-mar">
+                <br>
+                <h1 style="margin: 0%;">Outdoor</h1>
+                <br>
+                <ul>
+                    <li><input type="checkbox" name="Look Walker" id="cbxlwalk" value="Look Walker"><label for="cbxlwalk">Look Walker</label></li>
+                    <li><input type="checkbox" name="Mini Van Ad" id="cbxmvd" value="Mini Van Ad"><label for="cbxmvd">Mini Van Ad</label></li>
+                    <li><input type="checkbox" name="Tri cycle" id="cbxcy" value="Tri cycle"><label for="cbxcy">Tri cycle</label></li>
+                    <li><input type="checkbox" name="Pamplet" id="cbxpam" value="Pamplet"><label for="cbxpam">Pamplet</label></li>
+                    <li><input type="checkbox" name="News Paper Incursion" id="cbxnp" value="News Paper Incursion"><label for="cbxnp">News Paper Insertion</label></li>
+                    <li><input type="checkbox" name="Bill Board Flex" id="cbxbbf" value="Bill Board Flex"><label for="cbxbbf">Bill Board Flex</label></li>
+                    <li><input type="checkbox" name="Theatre Ads" id="cbxtheatre" value="Theatre Ads"><label for="cbxtheatre">Theatre Ads</label></li>
+
+
+                </ul>
+              </div>
+            </div>
+            <h1>What are your goals? Select all that apply.</h1>
+            <br>
+            <ul class="cbxtags">
+                <li><input type="checkbox" name="isale" id="cbxisale" value="Increase The Sale!"><label for="cbxisale"> Increase The Sale!</label></li>
+                <li><input type="checkbox" name="ebrand" id="cbxeba" value="Enhanced Brand Awareness"><label for="cbxeba"> Enhanced Brand Awareness</label></li>
+                <li><input type="checkbox" name="smm" id="cbxsmm" value="Expanded Social Media Engagement"><label for="cbxsmm">Expanded Social Media Engagement</label></li>
+                <li><input type="checkbox" name="reach" id="cbxildgen" value="Improved Lead Generation"><label for="cbxildgen">Improved Lead Generation</label></li>
+                <li><input type="checkbox" name="converse" id="cbxhcr" value="Higher Conversion Rates"><label for="cbxhcr">Higher Conversion Rates</label></li>
+                <li><input type="checkbox" name="tracking" id="cbxdpt" value="Detailed Performance Tracking"><label for="cbxdpt">Detailed Performance Tracking</label></li>
+                <li><input type="checkbox" name="roi" id="cbxroi" value="Better Return On Investment (ROI)"><label for="cbxroi">Better Return On Investment (ROI)</label></li>
+            </ul>
+
+            <br>
+            <div class="space"></div>
+            <div class="footer section">
+                            
+                <div class="container contact">
+                    
+                    <div class="space"></div>
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="footer-content">
+                                
+
+                            <div class="widget-content">
+
+                                <img src="images/pricing.png" alt="" style="width: 30%;">
+
+                            </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 contact_right">
+                                                
+                                    <div class="contact_left_title">
+                                        <h2>Contact Details</h2>
+                                        <hr>
+                                    </div>
+                                    <input type="text" name="name" placeholder="Name" class="contact_input" required>
+                                    <input type="email" name="email" placeholder="Email" class="contact_input" required>
+                                    <input type="tel" name="Phone" placeholder="Mobile no" class="contact_input" required>
+                                    <textarea type="text" name="Message" placeholder="Message" class="contact_input" required></textarea>
+                                    <button type="submit"> submit</button>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+        </form>
+    </div>
+    <script>
+        function toggleNav() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
