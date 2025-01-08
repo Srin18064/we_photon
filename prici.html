@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fixed Top Navigation Bar</title>
+    <link rel="stylesheet" href="prici.css">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
         .navbar {
             display: flex;
@@ -56,8 +58,10 @@
                 position: absolute;
                 top: 60px;
                 right: 20px;
-                background-color: #333;
-                width: 200px;
+                background-color: #eda735;
+                width: 90%;
+                text-align: start;
+                margin-left: 20px;
                 padding: 10px;
             }
             .navbar .nav-links a {
@@ -182,6 +186,8 @@
             
         </form>
     </div>
+
+    
     <script>
         function toggleNav() {
             var navbar = document.querySelector('.navbar');

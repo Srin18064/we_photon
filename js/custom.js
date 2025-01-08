@@ -165,3 +165,15 @@ function ctoin() {
 function ceoin() {
 	location.href="https://www.linkedin.com/in/thawfeek-m-101715a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
 }
+
+// scroll media
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
