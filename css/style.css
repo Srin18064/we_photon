@@ -152,6 +152,9 @@ blockquote {
 	min-height: 100%;
 	width: 100%;
 } */
+ .banner-content{
+	width: auto;
+ }
 .banner:after {
 	position: absolute;
 	top: 0;
@@ -164,7 +167,7 @@ blockquote {
 .banner-caption {
 	position: absolute;
 	text-align: justify;
-	top: 20%;
+	top: 12%;
 	width: 100%;
 	z-index: 2;
 	/* background-image: url('./images/banner1.png'); */
@@ -1635,7 +1638,7 @@ border-radius: 50%;
   @media (max-width: 600px) {
 	html { font-size: 12px; }
 	:root {
-	  --marquee-width: 100vw;
+	  --marquee-width: 98vw;
 	  --marquee-height: 16vh;
 	  --marquee-elements-displayed: 3;
 	}
