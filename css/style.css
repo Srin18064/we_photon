@@ -131,7 +131,7 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .header {
 	color: #ffffff;
-	background-color: #eda735;
+	background-color: #EAAC47;
 	padding: 10px 0;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -1570,7 +1570,7 @@ border-radius: 50%;
 /* scroll media */
 
 :root {
-	--marquee-width: 100vw;
+	--marquee-width: 98vw;
 	--marquee-height: 20vh;
 	/* --marquee-elements: 12; */ /* defined with JavaScript */
 	--marquee-elements-displayed: 5;
