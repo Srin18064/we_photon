@@ -1646,7 +1646,7 @@ border-radius: 50%;
 	.marquee:before, .marquee:after { width: 5rem; }
   }
 
-  .fa{
+  .contacts i{
 	width: 16px;
 	height: 16px;
 	font-size: 14px !important;
