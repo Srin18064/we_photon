@@ -598,3 +598,7 @@ margin-bottom: 20px;
 	color: #d7d1c5;
 	border-radius: 50px;
 }
+
+.contact_input1::placeholder{
+  color: #eda735;
+}
