@@ -144,7 +144,7 @@
  }
  .main-navigation .navbar-default .navbar-nav > li > a:hover,
  .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-   color: aquamarine;
+   color: grey;
  }
  
  
@@ -323,7 +323,7 @@
 }
 
 .contact_input:focus{
-	border: 2px solid aquamarine;
+	border: 2px solid grey;
 }
 
 .contact_input::placeholder{
@@ -366,7 +366,7 @@
 
  .tcppylist li:hover{
 	font-weight: 600;
-	color: aqua;
+	color: grey;
 }
  
  .termncon{

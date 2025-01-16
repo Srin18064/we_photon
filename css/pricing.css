@@ -144,7 +144,7 @@
  }
  .main-navigation .navbar-default .navbar-nav > li > a:hover,
  .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-   color: aquamarine;
+   color: grey;
  }
  
  
@@ -367,7 +367,7 @@
 }
 
 .contact_input:focus{
-    border: 2px solid aquamarine;
+    border: 2px solid grey;
 }
 
 .contact_input::placeholder{
@@ -437,7 +437,7 @@ margin-bottom: 20px;
  
    @media (max-width:800px) {
    .contact_input{
-     width: 80vw;
+     width: 77vw;
      align-items: justify;
    }
    .contact-right{
@@ -463,7 +463,7 @@ margin-bottom: 20px;
 
  .tcppylist li:hover{
 	font-weight: 600;
-	color: aqua;
+	color: grey;
 }
  
  .termncon{

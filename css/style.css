@@ -308,7 +308,7 @@ button.cta-button:hover{
 background:transparent;
 color:#000;
 border: 2px solid #eda735;
-box-shadow: 0 0 5px 2px rgba(127, 255, 212, 0.3);
+box-shadow: 0 0 5px 2px grey;
 }
 /* Misc
 ----------------------------------------------------------------------------- */
@@ -636,7 +636,7 @@ padding: 10px 0;
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-	color: aquamarine;
+	color: grey;
 }
 
 /* carousel */
@@ -1191,7 +1191,7 @@ border-radius: 50%;
 }
 
 .contact_input:focus{
-	border: 2px solid aquamarine;
+	border: 2px solid grey;
 }
 
 .contact_input::placeholder{
@@ -1253,7 +1253,7 @@ border-radius: 50%;
 
 .tcppylist li:hover{
 	font-weight: 600;
-	color: aqua;
+	color: grey;
 }
 
 .regbtn{
@@ -1490,7 +1490,7 @@ border-radius: 50%;
   /* popup button */
   #popupButton{
 	color: #000;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 20px;
 	background-color: #eda735;
 	display: block;
