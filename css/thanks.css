@@ -16,6 +16,10 @@ body{
   font-weight: 300;
   font-style: normal;
 }
+a {
+	color: #000000 !important;
+	text-decoration: none;
+}
 .social-links {
 	padding: 0;
 	list-style: none;

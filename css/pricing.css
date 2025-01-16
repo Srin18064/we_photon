@@ -351,6 +351,8 @@
     border: none;
     outline: none;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
     padding-left: 25px;
     font-weight: 500 ;

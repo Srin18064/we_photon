@@ -2,6 +2,9 @@
  * Author URl:https://wephoton.in
  * 
  */
+
+ @import url('https://fonts.cdnfonts.com/css/blanka');
+ @import url('https://fonts.cdnfonts.com/css/barriecito');
 body {
 	font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -362,6 +365,17 @@ padding: 70px 0;
 	text-align: center;
 	color: #000;
 	line-height: 180%;
+	font-family: "Barriecito", system-ui;
+	font-weight: 400;
+	font-size: 32px;
+	font-style: normal;
+}
+.banner-caption span {
+	font-family: 'Blanka', sans-serif;
+    font-weight: 400;
+	font-size: 32px;
+	font-style: normal;
+	color: #fff;
 }
 .ban_img{
 	width: 70%;
@@ -691,12 +705,7 @@ padding: 10px 0;
     margin-right: 10px;
 }
 
-.barriecito-regular {
-	font-family: "Barriecito", system-ui;
-	font-weight: 400;
-	font-size: 32px;
-	font-style: normal;
-  }
+
 
   
 
