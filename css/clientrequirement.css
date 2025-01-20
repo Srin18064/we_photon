@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.brand-logo img {
+    height: 40px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ddd;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+}
+
+.brand-info input,
+.contact-info input{
+    width: 80vw;
+    height: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.title{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+img:hover {
+    transform: scale(5);
+    background: black;
+}
