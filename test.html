@@ -14,39 +14,61 @@
     </style>
 </head>
 <body>
-    <h1>Multi-Step Form</h1>
+    <h1>Client Reqirment Form</h1>
     <form id="multiStepForm" action="https://api.web3forms.com/submit" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
         <!-- Step 1 -->
         <div class="step active">
+            <h2>Step 1: Brand Information</h2>
+            <label for="brandName">Brand Name</label>
+			<input type="text" id="brandName" name="brandName" required><br><br>
+			<label for="brandAge">Brand Age</label>
+			<input type="number" id="brandAge" name="brandAge" required><br><br>
+			<!-- <label for="brandLogo">Brand Logo</label>
+			<input type="file" id="brandLogo" data-advanced="true" name="attachment" required><br><br> -->
+            <h2>Brand color</h2>
+            <div>
+                <h3>Primary</h3>
+                <div style="display: flex;">
+                    <div style="margin-right: 10px;">
+                        <label for="primaryColor1">Color 1</label>
+                        <input type="color" id="primaryColor1" name="primaryColor1" required>
+                    </div>
+                    <div>
+                        <label for="primaryColor2">Color 2</label>
+                        <input type="color" id="primaryColor2" name="primaryColor2" required>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Secondary</h3>
+                <div style="display: flex;">
+                    <div style="margin-right: 10px;">
+                        <label for="secondaryColor1">Color 1</label>
+                        <input type="color" id="secondaryColor1" name="secondaryColor1" required>
+                    </div>
+                    <div>
+                        <label for="secondaryColor2">Color 2</label>
+                        <input type="color" id="secondaryColor2" name="secondaryColor2" required>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
             <h2>Step 1: Personal Information</h2>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required><br><br>
+            <label for="Name">First Name:</label>
+            <input type="text" id="Name" name="Name" required><br><br>
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName" required><br><br>
 			<label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required><br><br>
-        </div>
 
-        <!-- Step 2 -->
-        <div class="step">
-            <h2>Step 2: Brand Information</h2>
-            <label for="brandName">Brand Name</label>
-			<input type="text" id="brandName" name="brandName" required><br><br>
-			<label for="brandAge">Brand Age</label>
-			<input type="number" id="brandAge" name="brandAge" required><br><br>
-			<label for="brandLogo">Brand Logo</label>
-			<input type="file" id="brandLogo" data-advanced="true" name="attachment" required><br><br>
-			<label for="primaryColor1">Primary Color 1</label>
-			<input type="color" id="primaryColor1" name="primaryColor1" required><br><br>
-			<label for="primaryColor2">Primary Color 2</label>
-			<input type="color" id="primaryColor2" name="primaryColor2" required><br><br>
-			<label for="secondaryColor1">Secondary Color 1</label>
-			<input type="color" id="secondaryColor1" name="secondaryColor1" required><br><br>
-			<label for="secondaryColor2">Secondary Color 2</label>
-			<input type="color" id="secondaryColor2" name="secondaryColor2" required><br><br>
+            
         </div>
 
         <!-- Step 3 -->

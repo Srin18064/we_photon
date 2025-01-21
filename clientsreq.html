@@ -3,50 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Multi-Step Form</title>
     <link rel="stylesheet" href="css/clientrequirement.css">
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Arial, sans-serif;}
+        .step {display: none;}
+        .step.active {display: block;}
+        .navigation {margin-top: 20px;}
+        .navigation button {padding: 10px 20px; margin-right: 10px;}
+    </style>
 </head>
 <body>
-    
+    <h1>Client Reqirment Form</h1>
+    <form id="multiStepForm" action="https://api.web3forms.com/submit" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
+        <!-- Step 1 -->
+        <div class="step active">
+            <h2>Step 1: Brand Information</h2>
+            <br>
+            <label for="brandName">Brand Name</label>
+            <input type="text" id="brandName" name="brandName" required><br><br>
+            <label for="brandAge">Brand Age</label>
+            <input type="number" id="brandAge" name="brandAge" required><br><br>
+            <label for="brandPage"> Brand Website</label>
+            <input type="url" id="brandPage" name="brandPage" ><br><br>
+			<!-- <label for="brandLogo">Brand Logo</label>
+			<input type="file" id="brandLogo" data-advanced="true" name="attachment" required><br><br> -->
+            <h2>Brand color</h2>
+            <div class="colorComb">
+              <table>
+                <tr>
+                  <td>
+                    <h3>Primary</h3>
+                  </td>
+                  <td>
+                    <label for="primaryColor1">Color 1</label>
+                    <input type="color" id="primaryColor1" name="primaryColor1" required>
+                  </td>
+                  <td>
+                    <label for="primaryColor2">Color 2</label>
+                    <input type="color" id="primaryColor2" name="primaryColor2" required>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td>
+                    <h3>Secondary</h3>
+                  </td>
+                  <td>
+                    <label for="secondaryColor1">Color 1</label>
+                    <input type="color" id="secondaryColor1" name="secondaryColor1" required>
+                  </td>
+                  <td>
+                    <label for="secondaryColor2">Color 2</label>
+                    <input type="color" id="secondaryColor2" name="secondaryColor2" required>
+                  </td>
+                </tr>
+              </table>
+            </div>
+                
+			
+        </div>
 
-<!-- multistep form -->
-<form id="msform">
-    <!-- progressbar -->
-    <ul id="progressbar">
-      <li class="active">Account Setup</li>
-      <li>Social Profiles</li>
-      <li>Personal Details</li>
-    </ul>
-    <!-- fieldsets -->
-    <fieldset>
-      <h2 class="fs-title">Create your account</h2>
-      <h3 class="fs-subtitle">This is step 1</h3>
-      <input type="text" name="email" placeholder="Email" />
-      <input type="password" name="pass" placeholder="Password" />
-      <input type="password" name="cpass" placeholder="Confirm Password" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    <fieldset>
-      <h2 class="fs-title">Social Profiles</h2>
-      <h3 class="fs-subtitle">Your presence on the social network</h3>
-      <input type="text" name="twitter" placeholder="Twitter" />
-      <input type="text" name="facebook" placeholder="Facebook" />
-      <input type="text" name="gplus" placeholder="Google Plus" />
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    <fieldset>
-      <h2 class="fs-title">Personal Details</h2>
-      <h3 class="fs-subtitle">We will never sell it</h3>
-      <input type="text" name="fname" placeholder="First Name" />
-      <input type="text" name="lname" placeholder="Last Name" />
-      <input type="text" name="phone" placeholder="Phone" />
-      <textarea name="address" placeholder="Address"></textarea>
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
-    </fieldset>
-  </form>
-  
-  <script type="text/javascript" src="js/clientsreq.js"></script>
+        <!-- Step 2 -->
+        <div class="step">
+            <h2>Step 1: Contact Information</h2>
+            <br>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required><br><br>
+            <label for="lastName">Designation:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+			<label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+            <h2>Step 3: Content Preference</h2>
+            <br>
+            <button class="contPref" id="image">Image</button>
+            <button class="contPref" id="video">Video</button>
+            <div class="imageCheckboxList" id="imageCheckboxList" style="display: none;">
+              <input type="checkbox" name="image1" id="image1" value="image1">
+              <label for="image1"><img src="images/banner1.png" alt="image1" srcset="" style="width: 500px;"></label>
+              <input type="checkbox" name="image2" id="image2" value="image2">
+              <label for="image2"><img src="images/banner2.png" alt="image2" srcset="" style="width: 500px;"></label>
+              <input type="checkbox" name="image3" id="image3" value="image3">
+              <label for="image3"><img src="images/banner3.png" alt="image3" srcset="" style="width: 500px;"></label>
+              <input type="checkbox" name="image4" id="image4" value="image4">
+              <label for="image4"><img src="images/brand.png" alt="image4" srcset="" style="width: 500px;"></label>
+            </div>
+            <div class="videoCheckboxList" id="videoCheckboxList" style="display: none;">
+              <ul>
+                <li><input type="checkbox" name="Look Walker" id="cbxlwalk" value="Look Walker"><label for="cbxlwalk">Look Walker</label></li>
+                <li><input type="checkbox" name="Mini Van Ad" id="cbxmvd" value="Mini Van Ad"><label for="cbxmvd">Mini Van Ad</label></li>
+                <li><input type="checkbox" name="Tri cycle" id="cbxcy" value="Tri cycle"><label for="cbxcy">Tri cycle</label></li>
+                <li><input type="checkbox" name="Pamphlet" id="cbxpam" value="Pamphlet"><label for="cbxpam">Pamphlet</label></li>
+                <li><input type="checkbox" name="News Paper Incursion" id="cbxnp" value="News Paper Incursion"><label for="cbxnp">News Paper Insertion</label></li>
+                <li><input type="checkbox" name="Bill Board Flex" id="cbxbbf" value="Bill Board Flex"><label for="cbxbbf">Bill Board Flex</label></li>
+                <li><input type="checkbox" name="Theatre Ads" id="cbxtheatre" value="Theatre Ads"><label for="cbxtheatre">Theatre Ads</label></li>
+       
+              </ul>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+            <h2>Step 4: Summary</h2>
+            <p>Review your information before submitting.</p>
+			<label for="serviceNeeded"> Service Needed</label>
+			<input type="text" id="serviceNeeded" name="serviceNeeded" required><br><br>
+			<label for="goal">Goal</label>
+			<input type="text" id="goal" name="goal" required><br><br>
+			<label for="message">Message</label>
+			<textarea name="message" id="message"></textarea>
+      <input type="submit" id="submitBtn" value="Submit" style="display: none;">
+            <!-- Display summary of inputted data dynamically with JavaScript, if needed -->
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="navigation">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            
+        </div>
+    </form>
+
+    <script>
+		
+        
+		let currentStep = 0;
+        showStep(currentStep);
+
+        function showStep(step) {
+            const steps = document.querySelectorAll(".step");
+            steps[step].classList.add("active");
+            if (step === 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "inline";
+            }
+            if (step === steps.length - 1) {
+                document.getElementById("nextBtn").style.display = "none";
+                document.getElementById("submitBtn").style.display = "inline";
+            } else {
+                document.getElementById("nextBtn").style.display = "inline";
+                document.getElementById("submitBtn").style.display = "none";
+            }
+        }
+
+        function nextPrev(step) {
+            const steps = document.querySelectorAll(".step");
+            steps[currentStep].classList.remove("active");
+            currentStep += step;
+            showStep(currentStep);
+        }
+    </script>
+	<script>
+		document.getElementById('image').addEventListener('click', function() { 
+			document.getElementById('imageCheckboxList').style.display = 'block'; 
+			document.getElementById('videoCheckboxList').style.display = 'none'; 
+		}); 
+		document.getElementById('video').addEventListener('click', function() { 
+			document.getElementById('imageCheckboxList').style.display = 'none';
+			 document.getElementById('videoCheckboxList').style.display = 'block'; 
+			}
+		);
+
+	</script>
+	<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
