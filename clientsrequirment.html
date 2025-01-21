@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Step Form</title>
-    <link rel="stylesheet" href="css/clientrequirement.css">
-
+    <title>Multi-step Form</title>
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
-  
-    <h1>Client Reqirment Form</h1>
-    <ul id="progressbar">
-      <li class="progress active" id="step1">Brand Information</li>
-      <li class="progress" id="step2">Contact Information</li>
-      <li class="progress" id="step3">Content Preference</li>
-      <li class="progress" id="step4">Service & Goals</li>
-    </ul>
-    <form action="https://api.web3forms.com/submit" method="POST" id="multiStepForm" enctype="multipart/form-data">
-      <input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
-        <!-- Step 1 -->
-         
-        <div class="step active">
-            <h2>Step 1: Brand Information</h2>
+    <div class="container">
+        <form id="multiStepForm" method="post" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
+            <div class="progress-bar">
+                <div class="step active">1</div>
+                <div class="step">2</div>
+                <div class="step">3</div>
+                <div class="step">4</div>
+            </div>
+            <div class="form-step form-step-active">
+                
+                <h2>Step 1: Brand Information</h2>
             <br>
             <label for="brandName">Brand Name <span style="font-size: 12px;">(important)</span></label>
             <input type="text" id="brandName" name="brandName" required><br><br>
             <label for="brandAge">Brand Age <span style="font-size: 12px;">(important)</span></label>
             <input type="number" id="brandAge" name="brandAge" required><br><br>
-            <label for="brandPage">Website <span style="font-size: 12px;">(optional)</span></label>
-            <input type="url" id="brandPage" name="brandPage" ><br><br>
+            <label for="brandPage">Website</label>
+            <input type="text" name="brandPage" id="brandPage"><br><br>
             <label for="brandMail">Mail <span style="font-size: 12px;">(optional)</span></label>
-            <input type="email" id="brandMail" name="brandMail" placeholder="optional"><br><br>
+            <input type="email" id="brandMail" name="brandMail" ><br><br>
+
+            <h3>Choose Your Buissness Personality</h3>
+            <select id="dropdownMenu"> 
+                <option value="">Select a Personality</option> 
+                <option value="1">Step 1</option> 
+                <option value="2">Step 2</option> 
+                <option value="3">Step 3</option> 
+                <option value="4">Step 4</option> 
+                <option value="5">Step 5</option> 
+                <option value="6">Step 6</option> 
+                <option value="7">Step 7</option> 
+                <option value="8">Step 8</option> 
+                <option value="9">Step 9</option> 
+                <option value="10">Step 10</option> 
+                <option value="11">Step 11</option> 
+                <option value="12">Step 12</option> 
+            </select>
+            <br><br>
 			
             <h2>Brand color</h2>
             <div class="colorComb">
@@ -41,11 +56,11 @@
                   </td>
                   <td>
                     <label for="primaryColor1">Color 1</label>
-                    <input type="color" id="primaryColor1" name="primaryColor1" required>
+                    <input type="color" id="primaryColor1" name="primaryColor1">
                   </td>
                   <td>
                     <label for="primaryColor2">Color 2</label>
-                    <input type="color" id="primaryColor2" name="primaryColor2" required>
+                    <input type="color" id="primaryColor2" name="primaryColor2">
                   </td>
                 </tr>
               </table>
@@ -56,22 +71,21 @@
                   </td>
                   <td>
                     <label for="secondaryColor1">Color 1</label>
-                    <input type="color" id="secondaryColor1" name="secondaryColor1" required>
+                    <input type="color" id="secondaryColor1" name="secondaryColor1">
                   </td>
                   <td>
                     <label for="secondaryColor2">Color 2</label>
-                    <input type="color" id="secondaryColor2" name="secondaryColor2" required>
+                    <input type="color" id="secondaryColor2" name="secondaryColor2">
                   </td>
                 </tr>
               </table>
             </div>
-                
-			
-        </div>
 
-        <!-- Step 2 -->
-        <div class="step">
-            <h2>Step 2: Contact Information</h2>
+                <button type="button" data-next>Next</button>
+            </div>
+            <div class="form-step">
+                
+                <h2>Step 2: Contact Information</h2>
             <br>
             <label for="Name">Name:</label>
             <input type="text" id="Name" name="Name" required><br><br>
@@ -81,18 +95,16 @@
             <input type="email" id="email" name="email" required><br><br>
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required><br><br>
-
-            
-        </div>
-
-        <!-- Step 3 -->
-        <div class="step">
-            <h2>Content Preference</h2>
+                <button type="button" data-prev>Previous</button>
+                <button type="button" data-next>Next</button>
+            </div>
+            <div class="form-step">
+                <h2>Content Preference</h2>
             <br>
             <p>select any!</p>
             
-            <button class="contPref" id="image">Image</button>
-            <button class="contPref" id="video">Video</button>
+            <button id="image">Image</button>
+            <button id="video">Video</button>
             <div class="cbxtags" id="imageCheckboxList" style="display: none;">
               <input type="checkbox" name="image1" id="image1" value="image1">
               <label for="image1"><img src="images/banner1.png" alt="image1" srcset=""></label>
@@ -111,11 +123,13 @@
                 <li><input type="checkbox" name="Graphics" id="cbxgrap" value="Graphics"><label for="cbxgrap">Graphics</label></li>
                 <li><input type="checkbox" name="AI" id="cbxai" value="AI"><label for="cbxai">AI Cretive</label></li>              </ul>
             </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="step">
-            <h2>Service & Goals</h2>
+            <br>
+                <button type="button" data-prev>Previous</button>
+                <button type="button" data-next>Next</button>
+            </div>
+            <div class="form-step">
+                <h2>Step 4</h2>
+                <h2>Service & Goals</h2>
             <br>
             <h3>Service Needed</h3>
             <div class="cbxtags" id="videoCheckboxList">
@@ -139,92 +153,23 @@
             
             <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
-            <button type="submit">Submit</button>
-            
-            <!-- Display summary of inputted data dynamically with JavaScript, if needed -->
-        </div>
-
-        <!-- Navigation buttons -->
-        <div class="navigation">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-            
-        </div>
-    </form>
-
+            <br>
+                <button type="button" data-prev>Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
     <script>
-		
-        
-		let currentStep = 0;
-        showStep(currentStep);
-
-        function showStep(step) {
-            const steps = document.querySelectorAll(".step");
-            const progress = document.querySelectorAll(".progress");
-            steps[step].classList.add("active");
-            if (step === 0) {
-              progress[0].classList.add("active");
-                document.getElementById("prevBtn").style.display = "none";
-                document.getElementById("step1").style.color = "green";
-                
-            } else {
-                document.getElementById("prevBtn").style.display = "inline";
-            }
-            if (step === steps.length - 1) {
-                document.getElementById("nextBtn").style.display = "none";
-                document.getElementById("submitBtn").style.display = "inline";
-            } else {
-                document.getElementById("nextBtn").style.display = "inline";
-                document.getElementById("submitBtn").style.display = "none";
-            }
-            if (step === 1) {
-              progress[1].classList.add("active");
-                document.getElementById("step1").style.color = "green";
-                document.getElementById("progressbar").style.color = "green";
-                document.getElementById("step2").style.color = "green";
-            } else {
-                document.getElementById("step2").style.color = "black";
-            }
-            if (step === 2) {
-              progress[2].classList.add("active");
-                document.getElementById("step2").style.color = "green";
-                document.getElementById("step3").style.color = "green";
-            } else {
-                document.getElementById("step3").style.color = "black";
-            }
-            if (step === 3) {
-              progress[3].classList.add("active");
-                document.getElementById("step2").style.color = "green";
-                document.getElementById("step3").style.color = "green";
-                document.getElementById("step4").style.color = "green";
-            } else {
-                document.getElementById("step4").style.color = "black";
-            }
-
+        document.getElementById('image').addEventListener('click', function() { 
+        document.getElementById('imageCheckboxList').style.display = 'block'; 
+        document.getElementById('videoCheckboxList').style.display = 'none'; 
+    }); 
+    document.getElementById('video').addEventListener('click', function() { 
+        document.getElementById('imageCheckboxList').style.display = 'none';
+        document.getElementById('videoCheckboxList').style.display = 'block'; 
         }
-        function nextPrev(step) {
-            const steps = document.querySelectorAll(".step");
-            const progress = document.querySelectorAll(".progress");
-
-            steps[currentStep].classList.remove("active");
-          
-            currentStep += step;
-            showStep(currentStep);
-
-        }
+    );
     </script>
-	<script>
-		document.getElementById('image').addEventListener('click', function() { 
-			document.getElementById('imageCheckboxList').style.display = 'block'; 
-			document.getElementById('videoCheckboxList').style.display = 'none'; 
-		}); 
-		document.getElementById('video').addEventListener('click', function() { 
-			document.getElementById('imageCheckboxList').style.display = 'none';
-			 document.getElementById('videoCheckboxList').style.display = 'block'; 
-			}
-		);
-
-	</script>
-  
+    <script src="test.js"></script>
 </body>
 </html>
