@@ -3,133 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Requirement Form</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="css/clientrequirement.css">
 </head>
 <body>
-    <h1 class="title">Client Requirement Form</h1>
-    <form action="#" method="post" enctype="multipart/form-data">
-        
-        <h2>Brand Information</h2>
-        <div class="brand-info">
-            <label for="brandName">Brand Name:</label>
-            <input type="text" id="brandName" name="brandName" required><br>
-
-            <label for="brandLogo">Brand Logo:</label>
-            <input type="file" id="brandLogo" name="brandLogo" accept="image/*"><br>
-
-            <label for="brandFont">Brand Font:</label>
-            <input type="text" id="brandFont" name="brandFont" required><br>
-
-            <label for="brandAge">Brand Age:</label>
-            <input type="number" id="brandAge" name="brandAge" required><br>
-        </div>
-
-        <label for="primaryColor1">Primary Color 1:</label>
-        <input type="color" id="primaryColor1" name="primaryColor1" value="#000000" required><br>
-
-        <label for="primaryColor2">Primary Color 2:</label>
-        <input type="color" id="primaryColor2" name="primaryColor2" value="#000000" required><br>
-
-        <label for="primaryColor3">Primary Color 3:</label>
-        <input type="color" id="primaryColor3" name="primaryColor3" value="#000000" required><br>
-
-        <label for="secondaryColor1">Secondary Color 1:</label>
-        <input type="color" id="secondaryColor1" name="secondaryColor1" value="#000000" required><br>
-
-        <label for="secondaryColor2">Secondary Color 2:</label>
-        <input type="color" id="secondaryColor2" name="secondaryColor2" value="#000000" required><br>
-
-        <label for="secondaryColor3">Secondary Color 3:</label>
-        <input type="color" id="secondaryColor3" name="secondaryColor3" value="#000000" required><br>
-
-        <h2>Contact Information</h2>
-        <div class="contact-info">
-            <label for="personName">Person Name:</label>
-            <input type="text" id="personName" name="personName" required><br>
-
-            <label for="contactNumber">Contact Number:</label>
-            <input type="tel" id="contactNumber" name="contactNumber" required><br>
-
-            <label for="businessMail">Business Mail:</label>
-            <input type="email" id="businessMail" name="businessMail" required><br>
-
-            <label for="website">Website:</label>
-            <input type="url" id="website" name="website" required><br>
-        </div>
-
-        <h2>Brand Identity</h2>
-        <label for="personality">Personality of Brand (12 personalities):</label>
-        <input type="text" id="personality" name="personality" required><br>
-
-        
-
-        <label for="brandCategory">Brand Category:</label>
-        <input type="text" id="brandCategory" name="brandCategory" required><br>
-
-        <h2>Content Preferences</h2>
-        <label for="contentPreference">Content Preference:</label>
-        <select id="contentPreference" name="contentPreference" onchange="showMediaOptions()">
-            <option value="select">Select</option>
-            <option value="video">Video Content</option>
-            <option value="photo">Photo Content</option>
-        </select>
-        <br>
     
-        <div id="videoOptions" class="hidden">
-            <label for="videoSelection">Choose Video Type:</label>
-            <select id="videoSelection" name="videoSelection">
-                <option value="ugc">User-Generated Content (UGC)</option>
-                <option value="professional">Professional</option>
-                <option value="personalBranding">Personal Branding</option>
-                <option value="graphics">Graphics</option>
-                <option value="aiCreative">AI Creative</option>
-            </select>
-        </div>
-    
-        <div id="photoOptions" class="hidden">
-            <label for="photoSelection">Choose Photo Type:</label>
-            <input type="checkbox" name="model1" id="model1" value="model1"> <img src="images/banner1.png" alt="" style="width: 100px;">   </input>
-            <input type="checkbox" name="model1" id="model1" value="model1"> <img src="images/banner2.png" alt="" style="width: 100px;">   </input>
-            <input type="checkbox" name="model1" id="model1" value="model1"> <img src="images/banner3.png" alt="" style="width: 100px;">   </input>
-            <input type="checkbox" name="model1" id="model1" value="model1"> <img src="images/benfits.png" alt="" style="width: 100px;">   </input>
-            <input type="checkbox" name="model1" id="model1" value="model1"> <img src="images/brandlogo.png" alt="" style="width: 100px;">   </input>
-            <input type="checkbox" name="model1" id="model1" value="model1"> <img src="images/cnpgin.png" alt="" style="width: 100px;">   </input>
 
-        </div>
-        
-        <br><br>
-
-        <label>If Video Content:</label><br>
-        <input type="checkbox" id="ugc" name="videoType" value="ugc">
-        <label for="ugc">User-Generated Content (UGC)</label><br>
-        <input type="checkbox" id="professional" name="videoType" value="professional">
-        <label for="professional">Professional</label><br>
-        <input type="checkbox" id="personalBranding" name="videoType" value="personalBranding">
-        <label for="personalBranding">Personal Branding</label><br>
-        <input type="checkbox" id="graphics" name="videoType" value="graphics">
-        <label for="graphics">Graphics</label><br>
-        <input type="checkbox" id="aiCreative" name="videoType" value="aiCreative">
-        <label for="aiCreative">AI Creative</label><br>
-
-        <h2>Services Needed</h2>
-        <label for="serviceNeeded">Service Needed:</label>
-        <input type="text" id="serviceNeeded" name="serviceNeeded" required><br>
-
-        <label for="goal">Goal:</label>
-        <input type="text" id="goal" name="goal" required><br>
-
-        <label for="budget">Budget:</label>
-        <input type="text" id="budget" name="budget" required><br>
-
-        <h2>Additional Information</h2>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea><br>
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <script type="text/javascript" src="js/clientsreq.js"></script>
+<!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Account Setup</li>
+      <li>Social Profiles</li>
+      <li>Personal Details</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Create your account</h2>
+      <h3 class="fs-subtitle">This is step 1</h3>
+      <input type="text" name="email" placeholder="Email" />
+      <input type="password" name="pass" placeholder="Password" />
+      <input type="password" name="cpass" placeholder="Confirm Password" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Social Profiles</h2>
+      <h3 class="fs-subtitle">Your presence on the social network</h3>
+      <input type="text" name="twitter" placeholder="Twitter" />
+      <input type="text" name="facebook" placeholder="Facebook" />
+      <input type="text" name="gplus" placeholder="Google Plus" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Personal Details</h2>
+      <h3 class="fs-subtitle">We will never sell it</h3>
+      <input type="text" name="fname" placeholder="First Name" />
+      <input type="text" name="lname" placeholder="Last Name" />
+      <input type="text" name="phone" placeholder="Phone" />
+      <textarea name="address" placeholder="Address"></textarea>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
+    </fieldset>
+  </form>
+  
+  <script type="text/javascript" src="js/clientsreq.js"></script>
 </body>
 </html>
