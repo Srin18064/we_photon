@@ -28,6 +28,13 @@ body {font-family: Arial, sans-serif;}
   width: 100px;
   border-radius: 25px; 
 }
+.progress{
+  color: #000000;
+}
+
+.progress.active{
+  color: #27AE60;
+}
 
 button {
   background-color: #d7d1c5;
@@ -139,7 +146,8 @@ label {
   transition: transform .3s ease-in-out;
 }
 .cbxtags input[type="checkbox"]:checked + label {
-  border: 5px solid #1bdbf8;
+  border: 2px solid #1bdbf8;
+  background-color: #12bbd4;
   color: #fff;
   transition: all .2s;
 }
@@ -280,22 +288,22 @@ label img {
   font-size: 13px;
 }
 /*buttons*/
-#msform .action-button {
-  width: 100px;
-  background: #27AE60;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
-  padding: 10px;
-  margin: 10px 5px;
-  text-decoration: none;
-  font-size: 14px;
-}
-#msform .action-button:hover, #msform .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
-}
+  /* #msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  #msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+  } */
 /*headings*/
 .fs-title {
   font-size: 15px;

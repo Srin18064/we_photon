@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Step Form</title>
     <link rel="stylesheet" href="css/clientrequirement.css">
-    <style>
-       
-    </style>
+
 </head>
 <body>
   
     <h1>Client Reqirment Form</h1>
     <ul id="progressbar">
-      <li class="active">Brand Information</li>
-      <li>Contact Information</li>
-      <li>Content Preference</li>
-      <li>Service & Goals</li>
+      <li class="progress active" id="step1">Brand Information</li>
+      <li class="progress" id="step2">Contact Information</li>
+      <li class="progress" id="step3">Content Preference</li>
+      <li class="progress" id="step4">Service & Goals</li>
     </ul>
-    <form id="multiStepForm" action="https://api.web3forms.com/submit" method="post" enctype="multipart/form-data">
-		<input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
+    <form action="https://api.web3forms.com/submit" method="POST" id="multiStepForm" enctype="multipart/form-data">
+      <input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
         <!-- Step 1 -->
+         
         <div class="step active">
             <h2>Step 1: Brand Information</h2>
             <br>
@@ -32,8 +31,7 @@
             <input type="url" id="brandPage" name="brandPage" ><br><br>
             <label for="brandMail">Mail <span style="font-size: 12px;">(optional)</span></label>
             <input type="email" id="brandMail" name="brandMail" placeholder="optional"><br><br>
-			<!-- <label for="brandLogo">Brand Logo</label>
-			<input type="file" id="brandLogo" data-advanced="true" name="attachment" required><br><br> -->
+			
             <h2>Brand color</h2>
             <div class="colorComb">
               <table>
@@ -119,13 +117,30 @@
         <div class="step">
             <h2>Service & Goals</h2>
             <br>
-            <label for="serviceNeeded"> Service Needed</label>
-            <input type="text" id="serviceNeeded" name="serviceNeeded" required><br><br>
-            <label for="goal">Goal</label>
-            <input type="text" id="goal" name="goal" required><br><br>
+            <h3>Service Needed</h3>
+            <div class="cbxtags" id="videoCheckboxList">
+              <ul>
+                <li><input type="checkbox" name="SM Ad" id="cbxsmad" value="SM AD"><label for="cbxsmad">Social Media Ad</label></li>
+                <li><input type="checkbox" name="Yt Ad" id="cbxytad" value="Yt Ad"><label for="cbxytad">YouTube Ad</label></li>
+                <li><input type="checkbox" name="Theatre" id="cbxtheatre" value="Theatre"><label for="cbxtheatre">Theatre Ad</label></li>
+                <li><input type="checkbox" name="Email&Sms" id="cbxm&s" value="Email&Sms"><label for="cbxm&s">Email & SMS Ad</label></li>
+                <li><input type="checkbox" name="WhatsApp" id="cbxwp" value="WhatsApp"><label for="cbxwp">WhatsApp Ad</label></li>              </ul>
+            </div>
+            <h3>Goals</h3>
+            <ul class="cbxtags" style="padding: 0;">
+              <li><input type="checkbox" name="isale" id="cbxisale" value="Increase The Sale!"><label for="cbxisale"> Increase The Sale!</label></li>
+              <li><input type="checkbox" name="ebrand" id="cbxeba" value="Enhanced Brand Awareness"><label for="cbxeba"> Enhanced Brand Awareness</label></li>
+              <li><input type="checkbox" name="smm" id="cbxsmm" value="Expanded Social Media Engagement"><label for="cbxsmm">Expanded Social Media Engagement</label></li>
+              <li><input type="checkbox" name="reach" id="cbxildgen" value="Improved Lead Generation"><label for="cbxildgen">Improved Lead Generation</label></li>
+              <li><input type="checkbox" name="converse" id="cbxhcr" value="Higher Conversion Rates"><label for="cbxhcr">Higher Conversion Rates</label></li>
+              <li><input type="checkbox" name="tracking" id="cbxdpt" value="Detailed Performance Tracking"><label for="cbxdpt">Detailed Performance Tracking</label></li>
+              <li><input type="checkbox" name="roi" id="cbxroi" value="Better Return On Investment (ROI)"><label for="cbxroi">Better Return On Investment (ROI)</label></li>
+            </ul>
+            
             <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
-            <input type="submit" id="submitBtn" value="Submit" style="display: none;">
+            <button type="submit">Submit</button>
+            
             <!-- Display summary of inputted data dynamically with JavaScript, if needed -->
         </div>
 
@@ -145,9 +160,13 @@
 
         function showStep(step) {
             const steps = document.querySelectorAll(".step");
+            const progress = document.querySelectorAll(".progress");
             steps[step].classList.add("active");
             if (step === 0) {
+              progress[0].classList.add("active");
                 document.getElementById("prevBtn").style.display = "none";
+                document.getElementById("step1").style.color = "green";
+                
             } else {
                 document.getElementById("prevBtn").style.display = "inline";
             }
@@ -158,13 +177,40 @@
                 document.getElementById("nextBtn").style.display = "inline";
                 document.getElementById("submitBtn").style.display = "none";
             }
-        }
+            if (step === 1) {
+              progress[1].classList.add("active");
+                document.getElementById("step1").style.color = "green";
+                document.getElementById("progressbar").style.color = "green";
+                document.getElementById("step2").style.color = "green";
+            } else {
+                document.getElementById("step2").style.color = "black";
+            }
+            if (step === 2) {
+              progress[2].classList.add("active");
+                document.getElementById("step2").style.color = "green";
+                document.getElementById("step3").style.color = "green";
+            } else {
+                document.getElementById("step3").style.color = "black";
+            }
+            if (step === 3) {
+              progress[3].classList.add("active");
+                document.getElementById("step2").style.color = "green";
+                document.getElementById("step3").style.color = "green";
+                document.getElementById("step4").style.color = "green";
+            } else {
+                document.getElementById("step4").style.color = "black";
+            }
 
+        }
         function nextPrev(step) {
             const steps = document.querySelectorAll(".step");
+            const progress = document.querySelectorAll(".progress");
+
             steps[currentStep].classList.remove("active");
+          
             currentStep += step;
             showStep(currentStep);
+
         }
     </script>
 	<script>
@@ -179,7 +225,6 @@
 		);
 
 	</script>
-	<script src="https://web3forms.com/client/script.js" async defer></script>
   
 </body>
 </html>
