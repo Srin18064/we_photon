@@ -6,28 +6,32 @@
     <title>Multi-Step Form</title>
     <link rel="stylesheet" href="css/clientrequirement.css">
     <style>
-        * {box-sizing: border-box;}
-        body {font-family: Arial, sans-serif;}
-        .step {display: none;}
-        .step.active {display: block;}
-        .navigation {margin-top: 20px;}
-        .navigation button {padding: 10px 20px; margin-right: 10px;}
+       
     </style>
 </head>
 <body>
+  
     <h1>Client Reqirment Form</h1>
+    <ul id="progressbar">
+      <li class="active">Brand Information</li>
+      <li>Contact Information</li>
+      <li>Content Preference</li>
+      <li>Service & Goals</li>
+    </ul>
     <form id="multiStepForm" action="https://api.web3forms.com/submit" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
         <!-- Step 1 -->
         <div class="step active">
             <h2>Step 1: Brand Information</h2>
             <br>
-            <label for="brandName">Brand Name</label>
+            <label for="brandName">Brand Name <span style="font-size: 12px;">(important)</span></label>
             <input type="text" id="brandName" name="brandName" required><br><br>
-            <label for="brandAge">Brand Age</label>
+            <label for="brandAge">Brand Age <span style="font-size: 12px;">(important)</span></label>
             <input type="number" id="brandAge" name="brandAge" required><br><br>
-            <label for="brandPage"> Brand Website</label>
+            <label for="brandPage">Website <span style="font-size: 12px;">(optional)</span></label>
             <input type="url" id="brandPage" name="brandPage" ><br><br>
+            <label for="brandMail">Mail <span style="font-size: 12px;">(optional)</span></label>
+            <input type="email" id="brandMail" name="brandMail" placeholder="optional"><br><br>
 			<!-- <label for="brandLogo">Brand Logo</label>
 			<input type="file" id="brandLogo" data-advanced="true" name="attachment" required><br><br> -->
             <h2>Brand color</h2>
@@ -69,13 +73,13 @@
 
         <!-- Step 2 -->
         <div class="step">
-            <h2>Step 1: Contact Information</h2>
+            <h2>Step 2: Contact Information</h2>
             <br>
             <label for="Name">Name:</label>
             <input type="text" id="Name" name="Name" required><br><br>
             <label for="lastName">Designation:</label>
             <input type="text" id="lastName" name="lastName" required><br><br>
-			<label for="email">Email:</label>
+			      <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required><br><br>
@@ -85,11 +89,13 @@
 
         <!-- Step 3 -->
         <div class="step">
-            <h2>Step 3: Content Preference</h2>
+            <h2>Content Preference</h2>
             <br>
+            <p>select any!</p>
+            
             <button class="contPref" id="image">Image</button>
             <button class="contPref" id="video">Video</button>
-            <div class="imageCheckboxList" id="imageCheckboxList" style="display: none;">
+            <div class="cbxtags" id="imageCheckboxList" style="display: none;">
               <input type="checkbox" name="image1" id="image1" value="image1">
               <label for="image1"><img src="images/banner1.png" alt="image1" srcset="" style="width: 500px;"></label>
               <input type="checkbox" name="image2" id="image2" value="image2">
@@ -99,31 +105,27 @@
               <input type="checkbox" name="image4" id="image4" value="image4">
               <label for="image4"><img src="images/brand.png" alt="image4" srcset="" style="width: 500px;"></label>
             </div>
-            <div class="videoCheckboxList" id="videoCheckboxList" style="display: none;">
+            <div class="cbxtags" id="videoCheckboxList" style="display: none;">
               <ul>
-                <li><input type="checkbox" name="Look Walker" id="cbxlwalk" value="Look Walker"><label for="cbxlwalk">Look Walker</label></li>
-                <li><input type="checkbox" name="Mini Van Ad" id="cbxmvd" value="Mini Van Ad"><label for="cbxmvd">Mini Van Ad</label></li>
-                <li><input type="checkbox" name="Tri cycle" id="cbxcy" value="Tri cycle"><label for="cbxcy">Tri cycle</label></li>
-                <li><input type="checkbox" name="Pamphlet" id="cbxpam" value="Pamphlet"><label for="cbxpam">Pamphlet</label></li>
-                <li><input type="checkbox" name="News Paper Incursion" id="cbxnp" value="News Paper Incursion"><label for="cbxnp">News Paper Insertion</label></li>
-                <li><input type="checkbox" name="Bill Board Flex" id="cbxbbf" value="Bill Board Flex"><label for="cbxbbf">Bill Board Flex</label></li>
-                <li><input type="checkbox" name="Theatre Ads" id="cbxtheatre" value="Theatre Ads"><label for="cbxtheatre">Theatre Ads</label></li>
-       
-              </ul>
+                <li><input type="checkbox" name="UGU" id="cbxugc" value="UGC"><label for="cbxugc">UGC</label></li>
+                <li><input type="checkbox" name="Professional" id="cbxprof" value="Professional"><label for="cbxprof">Professional</label></li>
+                <li><input type="checkbox" name="Personal Branding" id="cbxpb" value="Personal Branding"><label for="cbxpb">Personal Branding</label></li>
+                <li><input type="checkbox" name="Graphics" id="cbxgrap" value="Graphics"><label for="cbxgrap">Graphics</label></li>
+                <li><input type="checkbox" name="AI" id="cbxai" value="AI"><label for="cbxai">AI Cretive</label></li>              </ul>
             </div>
         </div>
 
         <!-- Step 4 -->
         <div class="step">
-            <h2>Step 4: Summary</h2>
-            <p>Review your information before submitting.</p>
-			<label for="serviceNeeded"> Service Needed</label>
-			<input type="text" id="serviceNeeded" name="serviceNeeded" required><br><br>
-			<label for="goal">Goal</label>
-			<input type="text" id="goal" name="goal" required><br><br>
-			<label for="message">Message</label>
-			<textarea name="message" id="message"></textarea>
-      <input type="submit" id="submitBtn" value="Submit" style="display: none;">
+            <h2>Service & Goals</h2>
+            <br>
+            <label for="serviceNeeded"> Service Needed</label>
+            <input type="text" id="serviceNeeded" name="serviceNeeded" required><br><br>
+            <label for="goal">Goal</label>
+            <input type="text" id="goal" name="goal" required><br><br>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <input type="submit" id="submitBtn" value="Submit" style="display: none;">
             <!-- Display summary of inputted data dynamically with JavaScript, if needed -->
         </div>
 
@@ -178,5 +180,6 @@
 
 	</script>
 	<script src="https://web3forms.com/client/script.js" async defer></script>
+  
 </body>
 </html>
