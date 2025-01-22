@@ -29,22 +29,25 @@
             <label for="brandMail">Mail <span style="font-size: 12px;">(optional)</span></label>
             <input type="email" id="brandMail" name="brandMail" ><br><br>
 
-            <label for="dropdownMenu" style="text-align: start;">Choose Your Buissness Personality</label>
-            <select id="dropdownMenu"> 
-                <option value="">Select a Personality</option> 
-                <option value="1">Step 1</option> 
-                <option value="2">Step 2</option> 
-                <option value="3">Step 3</option> 
-                <option value="4">Step 4</option> 
-                <option value="5">Step 5</option> 
-                <option value="6">Step 6</option> 
-                <option value="7">Step 7</option> 
-                <option value="8">Step 8</option> 
-                <option value="9">Step 9</option> 
-                <option value="10">Step 10</option> 
-                <option value="11">Step 11</option> 
-                <option value="12">Step 12</option> 
-            </select>
+            <h3>Choose Your Buissness Personality</h3>
+            <div class="cbxtags">
+              <ul>
+                <li><input type="checkbox" name="Innocent" id="cbxinnocent" value="Innocent"><label for="cbxinnocent">The Innocent</label></li>
+                <li><input type="checkbox" name="Explorer" id="cbxexplorer" value="Explorer"><label for="cbxexplorer">The Explorer</label></li>
+                <li><input type="checkbox" name="Sage" id="cbxsage" value="Sage"><label for="cbxsage">The Sage</label></li>
+                <li><input type="checkbox" name="Hero" id="cbxhero" value="Hero"><label for="cbxhero">The Hero</label></li>
+                <li><input type="checkbox" name="Outlaw" id="cbxoutlaw" value="Outlaw"><label for="cbxoutlaw">The Outlaw</label></li>
+                <li><input type="checkbox" name="Magician" id="cbxmagician" value="Magician"><label for="cbxmagician">The Magician</label></li>
+                <li><input type="checkbox" name="Regular" id="cbxregular" value="Regular"><label for="cbxregular">The Regular</label></li>
+                <li><input type="checkbox" name="Lover" id="cbxlover" value="Lover"><label for="cbxlover">The Lover</label></li>
+                <li><input type="checkbox" name="Jester" id="cbxjester" value="Jester"><label for="cbxjester">The Jester</label></li>
+                <li><input type="checkbox" name="Caregiver" id="cbxcare" value="Caregiver"><label for="cbxcare">The Caregiver</label></li>
+                <li><input type="checkbox" name="Ruler" id="cbxruler" value="Ruler"><label for="cbxruler">The Ruler</label></li>
+                <li><input type="checkbox" name="Creator" id="cbxcreator" value="Creator"><label for="cbxcreator">The Creator</label></li>
+
+              </ul>
+            </div>
+
             <br><br>
 			
             <h2>Brand color</h2>
@@ -101,6 +104,28 @@
             <div class="form-step">
                 <h2>Content Preference</h2>
             <br>
+            <h2>Brand Category</h2>
+            <div class="cbxtags">
+              <ul>
+                <li><input type="checkbox" name="Clothing" id="cbxclothing" value="Clothing"><label for="cbxclothing">Clothing</label></li>
+                <li><input type="checkbox" name="Restaurent" id="cbxrestaurent" value="Restaurent"><label for="cbxrestaurent">Restaurent</label></li>
+                <li><input type="checkbox" name="Jwellery" id="cbxjwellery" value="Jwellery"><label for="cbxjwellery">Jwellery</label></li>
+                <li><input type="checkbox" name="Mens Clothing" id="cbxmen" value="Mens Clothing"><label for="cbxmen">Mens Clothing</label></li>
+                <li><input type="checkbox" name="Womens Clothing" id="cbxwomen" value="Womens Clothing"><label for="cbxwomen">Womens Clothing</label></li>
+                <li><input type="checkbox" name="Educational Institutions" id="cbxedu" value="Educational Institutions"><label for="cbxedu">Educational Institutions</label></li>
+                <li><input type="checkbox" name="Health care" id="cbxhos" value="Health care"><label for="cbxhos">Health Care</label></li>
+                <li><input type="checkbox" name="Pharmacy" id="cbxphar" value="Pharmacy"><label for="cbxphar">Pharmacy</label></li>
+                <li><input type="checkbox" name="Tours & Travel" id="cbxtts" value="Tours & Travel"><label for="cbxtts">Tours & Travel</label></li>
+                <li><input type="checkbox" name="E-commerce" id="cbxecom" value="E-commerce"><label for="cbxecom">E-commerce</label></li>
+                <li><input type="checkbox" name="Gym" id="cbxgym" value="Gym"><label for="cbxgym">Gym</label></li>
+                <li><input type="checkbox" name="Beauty Spa & Saloon" id="cbxbss" value="Beauty Spa & Saloon"><label for="cbxbss">Beauty Spa & Saloon</label></li>
+                <li><input type="checkbox" name="Retail Store " id="cbxstore" value="Retail Store"><label for="cbxstore">Retail Store</label></li>
+                <li><input type="checkbox" name="Sports" id="cbxsports" value="Sports"><label for="cbxsports">Sports</label></li>
+                <li><input type="checkbox" name="Photography" id="cbxphoto" value="Photography"><label for="cbxphoto">Photography</label></li>
+                <li><input type="checkbox" name="Real Estate" id="cbxreal" value="Real Estate"><label for="cbxreal">Real Estate</label></li>
+  
+              </ul>
+            </div>
             <p>select any!</p>
             <div class="cbxtags">
               
@@ -113,14 +138,8 @@
             <!-- <button id="image">Image</button> -->
             <!-- <button id="video">Video</button> -->
             <div class="cbxtags" id="imageCheckboxList" style="display: none;">
-              <input type="checkbox" name="image1" id="image1" value="image1">
-              <label for="image1"><img src="images/banner1.png" alt="image1" srcset=""></label>
-              <input type="checkbox" name="image2" id="image2" value="image2">
-              <label for="image2"><img src="images/banner2.png" alt="image2" srcset="" ></label>
-              <input type="checkbox" name="image3" id="image3" value="image3">
-              <label for="image3"><img src="images/banner3.png" alt="image3" srcset="" ></label>
-              <input type="checkbox" name="image4" id="image4" value="image4">
-              <label for="image4"><img src="images/brand.png" alt="image4" srcset="" ></label>
+              <li><input type="checkbox" name="SM Post" id="cbxsmpost" value="SM Post"><label for="cbxsmpost">Social Media Post</label></li>
+              <li><input type="checkbox" name="Pamphlet" id="cbxpam" value="Pamphlet"><label for="cbxpam">Pamphlet</label></li>
             </div>
             <div class="cbxtags" id="videoCheckboxList" style="display: none;">
               <ul>
@@ -128,7 +147,8 @@
                 <li><input type="checkbox" name="Professional" id="cbxprof" value="Professional"><label for="cbxprof">Professional</label></li>
                 <li><input type="checkbox" name="Personal Branding" id="cbxpb" value="Personal Branding"><label for="cbxpb">Personal Branding</label></li>
                 <li><input type="checkbox" name="Graphics" id="cbxgrap" value="Graphics"><label for="cbxgrap">Graphics</label></li>
-                <li><input type="checkbox" name="AI" id="cbxai" value="AI"><label for="cbxai">AI Cretive</label></li>              </ul>
+                <li><input type="checkbox" name="AI" id="cbxai" value="AI"><label for="cbxai">AI Cretive</label></li>              
+              </ul>
             </div>
             <br>
                 <button type="button" data-prev>Previous</button>
@@ -161,10 +181,10 @@
             <label for="budget">Budget</label>
             <input type="number" name="budget" id="budget">
             <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message" style="height: 200px;"></textarea>
             <br>
                 <button type="button" data-prev>Previous</button>
-                <button type="submit">Submit</button>
+                <button type="submit" >Submit</button>
             </div>
         </form>
     </div>
