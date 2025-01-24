@@ -6,7 +6,7 @@
 }
 .container {
     max-width: 600px;
-    width: 600px;
+    /* width: 600px;  */
     margin: 16px auto;
     padding: 20px;
     
@@ -14,15 +14,7 @@
 }
 @media ( max-width = 600px){
     .container{
-        width: 95vw;
-        margin: auto;
-        padding: 20px;
-    }
-
-}
-@media ( max-width = 600px){
-    textarea {
-        width: 95vw;
+        width: 96vw;
         margin: auto;
         padding: 20px;
     }
@@ -30,14 +22,6 @@
 }
 
 
-@media ( max-width = 600px){
-    input {
-        width: 95vw;
-        margin: auto;
-        padding: 20px;
-    }
-
-}
 
 .progress-bar {
     display: flex;
@@ -46,7 +30,7 @@
 .step {
     width: 20px;
     height: 20px;
-    background-color: #40b67bc0;
+    background-color: #194f26;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -97,7 +81,7 @@ form {
 }
 
 input, textarea {
-    width: 500px;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     background-color: #f8f8f8;
@@ -190,6 +174,10 @@ label {
     padding: 2px 6px 2px 2px;
     content: "+";
     transition: transform .3s ease-in-out;
+}
+
+input[type = "checkbox"] {
+    width: fit-content !important;
 }
 
 .cbxtags input[type="checkbox"]:checked + label::before {
@@ -312,3 +300,25 @@ label img {
     border: 2px solid #e9a1ff;
 }
 
+/* range input */
+.range-container {
+    text-align: center;
+    background-color: #eda735;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    background: #4caf50;
+}
+.value-display {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+}

@@ -11,10 +11,10 @@
         <form id="multiStepForm" method="post" action="https://api.web3forms.com/submit">
             <input type="hidden" name="access_key" value="10c2ef9d-bd58-4827-b031-30751bbd0952">
             <div class="progress-bar">
-                <div class="step active">1</div>
-                <div class="step">2</div>
-                <div class="step">3</div>
-                <div class="step">4</div>
+                <div class="step active"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+                <div class="step"></div>
             </div>
             <div class="form-step form-step-active">
                 
@@ -32,6 +32,7 @@
             <h3>Choose Your Buissness Personality</h3>
             <div class="cbxtags">
               <ul>
+                
                 <li><input type="checkbox" name="Innocent" id="cbxinnocent" value="Innocent"><label for="cbxinnocent">The Innocent</label></li>
                 <li><input type="checkbox" name="Explorer" id="cbxexplorer" value="Explorer"><label for="cbxexplorer">The Explorer</label></li>
                 <li><input type="checkbox" name="Sage" id="cbxsage" value="Sage"><label for="cbxsage">The Sage</label></li>
@@ -102,7 +103,7 @@
                 <button type="button" data-next>Next</button>
             </div>
             <div class="form-step">
-                <h2>Content Preference</h2>
+                <h2>Category & Preference</h2>
             <br>
             <h2>Brand Category</h2>
             <div class="cbxtags">
@@ -126,7 +127,8 @@
   
               </ul>
             </div>
-            <p>select any!</p>
+            <h2>Content Preference</h2>
+            
             <div class="cbxtags">
               
               <input type="checkbox" name="image" id="image" placeholder="Image">
@@ -138,10 +140,12 @@
             <!-- <button id="image">Image</button> -->
             <!-- <button id="video">Video</button> -->
             <div class="cbxtags" id="imageCheckboxList" style="display: none;">
+              <h2>Image Type</h2>
               <li><input type="checkbox" name="SM Post" id="cbxsmpost" value="SM Post"><label for="cbxsmpost">Social Media Post</label></li>
               <li><input type="checkbox" name="Pamphlet" id="cbxpam" value="Pamphlet"><label for="cbxpam">Pamphlet</label></li>
             </div>
             <div class="cbxtags" id="videoCheckboxList" style="display: none;">
+              <h2>Video Type</h2>
               <ul>
                 <li><input type="checkbox" name="UGU" id="cbxugc" value="UGC"><label for="cbxugc">UGC</label></li>
                 <li><input type="checkbox" name="Professional" id="cbxprof" value="Professional"><label for="cbxprof">Professional</label></li>
@@ -177,14 +181,25 @@
               <li><input type="checkbox" name="tracking" id="cbxdpt" value="Detailed Performance Tracking"><label for="cbxdpt">Detailed Performance Tracking</label></li>
               <li><input type="checkbox" name="roi" id="cbxroi" value="Better Return On Investment (ROI)"><label for="cbxroi">Better Return On Investment (ROI)</label></li>
             </ul>
-            
-            <label for="budget">Budget</label>
-            <input type="number" name="budget" id="budget">
+            <br>
+            <div class="range-container">
+              <h3>Budget</h3>
+              <div class="range-labels">
+                  <span id="minValue">5000</span>
+                  <span id="maxValue">500000</span>
+              </div>
+              <input type="range" id="rangeInput" min="5000" max="500000" value="250000" oninput="updateValue()">
+              <div class="value-display" id="valueDisplay">250000</div>
+            </div>
+            <br>
             <label for="message">Message</label>
             <textarea name="message" id="message" style="height: 200px;"></textarea>
+
+            <br>
+            <button type="submit" style="max-width: 50vw; color: black; display: block;  min-width: 250px; border-radius: 25px; background-color: #194f26; margin-left: auto; margin-right: auto;">Submit</button>
             <br>
                 <button type="button" data-prev>Previous</button>
-                <button type="submit" >Submit</button>
+                
             </div>
         </form>
     </div>

@@ -27,3 +27,16 @@ function changeStep(direction) {
     progressBar[stepIndex].classList.add('active');
 }
 
+
+function updateValue() {
+    const rangeInput = document.getElementById('rangeInput');
+    const valueDisplay = document.getElementById('valueDisplay');
+    valueDisplay.textContent = rangeInput.value;
+}
+
+// Optionally, you can dynamically update the min and max labels based on the input's attributes
+window.onload = function() {
+    const rangeInput = document.getElementById('rangeInput');
+    document.getElementById('minValue').textContent = rangeInput.min;
+    document.getElementById('maxValue').textContent = rangeInput.max;
+}

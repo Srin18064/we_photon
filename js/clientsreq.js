@@ -1,4 +1,10 @@
 let currentStep = 1;
+let primaryColor1 = document.querySelector('#primaryColor1');
+
+
+primaryColor1.addEventListener('input', (e) => {
+    document.documentElement.style.setProperty('--primary-color', e.target.value);
+});
 
 function showStep(step) {
     document.querySelectorAll('fieldset').forEach((fieldset, index) => {
@@ -28,3 +34,5 @@ function updateProgressBar(step) {
 
 // Initialize the first step
 showStep(currentStep);
+
+
