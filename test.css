@@ -322,3 +322,20 @@ input[type="range"] {
     display: flex;
     justify-content: space-between;
 }
+
+.currency-input {
+    position: relative;
+  }
+
+  .currency-input input {
+    padding-left: 25px; /* Adjust this value based on the width of the currency symbol */
+  }
+
+  .currency-input:before {
+    content: '₹';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+  }
