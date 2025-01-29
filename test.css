@@ -24,10 +24,11 @@
     padding-top: 60px;
 }
 
-.popup input {
+.popup img {
     margin: auto;
     display: block;
     max-height: 70vh;
+    width: 90vw;
     max-width: 700px;
 }
 
