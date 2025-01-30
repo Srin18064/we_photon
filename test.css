@@ -1,7 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    font-family: 'Roboto', sans-serif;
     background-color: #d7d1c5;
+    text-align: center;
 }
 .thumbnail {
     width: 40vw;
@@ -13,10 +19,14 @@
 
 h1 {
     background-color: #eda735;
-    margin: 16px 0;
+    margin: 1rem auto;
+    gap: 8px;
+    min-width: 48%;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: #eda735;
+    width: 48%;
     border-radius: 25px;
-    padding: 8px;
-    text-align: center;
 }
 
 .form-step {
@@ -58,6 +68,8 @@ h1 {
     top: 15px;
     right: 35px;
     color: #eda735;
+    background: transparent;
+    border: 1px solid #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -75,6 +87,9 @@ h1 {
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 16px;
+    background-color: #eda735;
+    color: black;
+    border-radius: 25px;
 }
 
 .contactInput{
@@ -122,17 +137,23 @@ label{
     text-align: center;
     gap: 8px;
     min-width: 48%;
-    padding: 30px;
+    padding: 1rem;
     margin: 0 auto;
     background-color: #eda735;
     width: 48%;
     border-radius: 25px;
 }
 
-@media  (max-width : 600px) {
+@media  (max-width : 768px) {
     .contactLeft {
         width: 90%;
+        margin: 0 auto;
     }
+    h1 {
+        width: 90%;
+        margin: 8px auto;
+    }
+
 }
 
 @media (min-width:768px) and (max-width:991px) {
@@ -141,11 +162,26 @@ label{
       padding-right: 0;
       width: 90%;
     }
+    h1 {
+        font-size: 24px;
+        width: 90%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
 }
 
 @media (min-width : 991px) {
+    .popup input{
+        height: 85vh;
+        width: auto;
+        
+    }
     .contactLeft {
         width: 70%;
+    }
+    h1 {
+        width: 70%;
+        margin: 1rem auto;
     }
 }
 
@@ -166,6 +202,7 @@ form {
     font-size: 24px;
     margin-left: 8%;
     margin-right: 8%;  
+    background-color: grey;
     color: black;
     border-radius: 16px;
 }

@@ -25,12 +25,11 @@
         <input type="hidden" name="access_key" value="3d466ffa-e925-48c9-aae4-6a56ed9b39b7">
 
         <div class="contactLeft">
-            <h1>Requirement Form</h1>
-            <label for="name">Name:</label>
-        <input type="text" id="name" name="name" class="contactInput" oninput="handleNameInput()"><br>
+            <h1>Requirement Form</h1> 
+        <input type="text" id="name" name="name" class="contactInput" placeholder="Name" oninput="handleNameInput()"><br>
         
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="mail" class="contactInput" oninput="validateForm()"><br>
+       
+        <input type="tel" id="mobile" name="mobile" class="contactInput" placeholder="Mobile" oninput="validateForm()"><br>
           
 
         </div>
@@ -83,16 +82,13 @@
             </div>
     
             <div id="popup" class="popup" style="display: none;">
-                <span class="close" style="background: transparent; border: 3px solid #eda735;" onclick="closePopup()">&times;</span>
+                <span class="close" style="background: transparent; border: 1px solid #eda735;" onclick="closePopup()">&times;</span>
                 <input type="image" src="" value="" id="popupImage" name="popupImage">
                 <!-- <img id="popupImage" src="">
                 <input type="text" name="Image" id="popupImage1" value="" style="display: none;"> -->
                 <div style="display: flex; justify-content: space-between; background: transparent;">
-                    <div class="selectDiv">
-                        <input type="checkbox" name="Selection" id="popupImage1" value="" style="width: 32px; display: inline-block;"  checked>
-                        <label for="popupImage1" style="display: inline-block;">Select</label>
-                    </div>
-                    <button type="submit" class="submitButton">submit</button>
+                    <input type="hidden" name="Selection" id="popupImage1" value="" style="width: 32px;">
+                    <button  type="button" onclick="confirmSubmission(event)">submit</button>
                 </div>
             </div>
         </div>

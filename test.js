@@ -2,11 +2,20 @@ let nameStarted = false;
 
 function validateForm() {
     var name = document.getElementById('name').value;
-    var mail = document.getElementById('mail').value;
+    var mail = document.getElementById('mobile').value;
     var dropdown = document.getElementById('dropdown');
     
-    dropdown.disabled = (name === "" || mail === "");
-    dropdown.style.backgroundColor('red');
+    dropdown.disabled = (name === "" || mail === "" || mail.length !== 10);
+
+    if (dropdown.disabled) {
+        dropdown.style.backgroundColor = 'gray';
+        dropdown.style.color = 'white';
+        
+    }
+    else {
+        dropdown.style.backgroundColor = 'white';
+        dropdown.style.color = 'black';
+    }
 }
 
 function handleNameInput() {
@@ -54,4 +63,11 @@ function closePopup() {
 function selectImage() {
     alert("Image selected!");
     closePopup();
+}
+
+function confirmSubmission(event) {
+    event.preventDefault(); // Prevent the form from submitting immediately
+    if (confirm("Are you sure you want to submit the form?")) {
+        document.getElementById("multiStepForm").submit(); // If confirmed, submit the form
+    }
 }
