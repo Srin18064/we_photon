@@ -1,7 +1,30 @@
+let nameStarted = false;
+
+function validateForm() {
+    var name = document.getElementById('name').value;
+    var mail = document.getElementById('mail').value;
+    var dropdown = document.getElementById('dropdown');
+    
+    dropdown.disabled = (name === "" || mail === "");
+    dropdown.style.backgroundColor('red');
+}
+
+function handleNameInput() {
+    if (!nameStarted) {
+        nameStarted = true;
+        setTimeout(function() {
+            document.getElementById('mail').focus();
+        }, 30000); // 30 seconds
+    }
+    validateForm();
+    
+}
+
 function showContent() {
     var dropdown = document.getElementById("dropdown");
     var selectedValue = dropdown.value;
     var contents = document.getElementsByClassName("content");
+    
     
     for (var i = 0; i < contents.length; i++) {
         contents[i].style.display = "none";

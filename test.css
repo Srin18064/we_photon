@@ -1,8 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #d7d1c5;
+}
 .thumbnail {
     width: 40vw;
     /* height: 100px; */
     margin: 10px;
+    border-radius: 25px;
     cursor: pointer;
+}
+
+h1 {
+    background-color: #eda735;
+    margin: 16px 0;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+}
+
+.form-step {
+    display: none;
+}
+.form-step.active {
+    display: block;
 }
 
 .gallery {
@@ -24,7 +45,7 @@
     padding-top: 60px;
 }
 
-.popup img {
+.popup input {
     margin: auto;
     display: block;
     max-height: 70vh;
@@ -36,7 +57,7 @@
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: #eda735;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -54,4 +75,109 @@
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+.contactInput{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-left: 25px;
+    font-weight: 500 ;
+    color: #333333;
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+.contact_input:focus{
+    border: 2px solid grey;
+}
+
+.contact_input::placeholder{
+  display: block;
+  padding: 10px;
+  min-width: 80%;
+  width: 80%;
+  text-align: justify;
+  color: #eda735;
+
+}
+
+label{
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    background-color: #eda735;
+
+}
+
+.contactLeft{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    gap: 8px;
+    min-width: 48%;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #eda735;
+    width: 48%;
+    border-radius: 25px;
+}
+
+@media  (max-width : 600px) {
+    .contactLeft {
+        width: 90%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .contactLeft {
+      padding-left: 0;
+      padding-right: 0;
+      width: 90%;
+    }
+}
+
+@media (min-width : 991px) {
+    .contactLeft {
+        width: 70%;
+    }
+}
+
+form {
+
+    margin: 0;
+    padding: 2%;
+}
+
+#dropdown {
+    text-align: center;
+    align-content: center;
+    
+    width: 80%;
+    max-width: 768px;
+    margin: 4px auto;
+    height: 50px;
+    font-size: 24px;
+    margin-left: 8%;
+    margin-right: 8%;  
+    color: black;
+    border-radius: 16px;
+}
+
+.selectDiv {
+    margin: 20px auto;
+  background-color: #eda735;
+  border-radius: 16px;
+  padding: 12px;
+  justify-content: space-evenly;
+}
+
+.submitButton {
+    border-radius: 16px;
 }
