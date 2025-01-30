@@ -11,6 +11,10 @@ body {
 	position: relative;
     
 }
+body {
+    user-select: none;
+}
+
 body{
     font-family: "Roboto", sans-serif;
   font-weight: 300;

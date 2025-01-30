@@ -35,4 +35,12 @@ function updateProgressBar(step) {
 // Initialize the first step
 showStep(currentStep);
 
+function disableRightClick(event) {
+    if (event.button == 2) {
+        event.preventDefault();
+        alert("Right click disabled.");
+        return false;
+    }
+}
+document.addEventListener('contextmenu', disableRightClick);
 

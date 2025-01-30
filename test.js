@@ -71,3 +71,12 @@ function confirmSubmission(event) {
         document.getElementById("multiStepForm").submit(); // If confirmed, submit the form
     }
 }
+
+function disableRightClick(event) {
+    if (event.button == 2) {
+        event.preventDefault();
+        alert("Right click disabled.");
+        return false;
+    }
+}
+document.addEventListener('contextmenu', disableRightClick);

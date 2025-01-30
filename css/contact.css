@@ -9,6 +9,10 @@
  .brand {
    font-family: 'Raleway', sans-serif;
  }
+ body {
+  user-select: none;
+}
+
  html,
  body {
    height: 100%;

@@ -15,6 +15,11 @@
    height: 100%;
 
  }
+
+ body {
+  user-select: none;
+}
+
  body {
    font-size: 16px;
    line-height: 1.50;
