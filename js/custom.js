@@ -178,11 +178,11 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-function disableRightClick(event) {
-    if (event.button == 2) {
-        event.preventDefault();
-        alert("Right click disabled.");
-        return false;
-    }
-}
-document.addEventListener('contextmenu', disableRightClick);
+// function disableRightClick(event) {
+//     if (event.button == 2) {
+//         event.preventDefault();
+//         alert("Right click disabled.");
+//         return false;
+//     }
+// }
+// document.addEventListener('contextmenu', disableRightClick);

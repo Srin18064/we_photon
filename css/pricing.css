@@ -19,6 +19,11 @@
   user-select: none;
 }
 
+.logo a{
+	position: relative;
+	z-index: 2;
+}
+
  body {
    font-size: 15px;
    line-height: 1.50;
