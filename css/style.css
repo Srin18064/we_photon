@@ -427,6 +427,34 @@ padding: 70px 0;
 	margin-left: auto;
 	margin-right: auto;
 }
+@media screen and (max-width: 768px) {
+	.banner-caption h1 {
+		font-size: 40px;
+	}
+	.banner-caption h2 {
+		font-size: 30px;
+	}
+	.banner-caption h3 {
+		font-size: 24px;
+	}
+	.banner-caption h4 {
+		font-size: 20px;
+	}
+	.banner-caption h5 {
+		font-size: 18px;
+	}
+	.banner-caption h6 {
+		font-size: 16px;
+	}
+	.banner-caption .blan {
+		font-size: 24px;
+	}
+	
+	.ban_img {
+		width: 80%;
+		margin: auto;
+	}
+}
 
 .coda-extrabold {
 	font-family: "Coda", system-ui;
