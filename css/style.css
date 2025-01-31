@@ -371,6 +371,41 @@ padding: 70px 0;
 .banner-caption h1 {
 	font-size: 60px;
 }
+
+.landText {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.banner-caption .blan {
+	font-family: "Blanka";
+	font-size: 32px;
+	text-align: center;
+	margin-inline: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.8;
+	/* border-right: 1px solid; */
+	animation: typing 3s steps(25) forwards,
+	blink 1s step-end infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+	
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
 .banner-text{
 	text-align: center;
 	color: #000;
@@ -380,13 +415,13 @@ padding: 70px 0;
 	font-size: 32px;
 	font-style: normal;
 }
-.banner-caption span {
+/* .banner-caption span {
 	font-family: 'Blanka', sans-serif;
     font-weight: 400;
 	font-size: 32px;
 	font-style: normal;
 	color: #fff;
-}
+} */
 .ban_img{
 	width: 70%;
 	margin-left: auto;
