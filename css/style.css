@@ -7,7 +7,7 @@
     font-family: 'MyCustomFont';
     src: url('../fonts/font-awesome/fonts/Blanka-Regular.otf') format('opentype');
  }
-
+ @import url('https://fonts.cdnfonts.com/css/blanka');
  @import url('https://fonts.cdnfonts.com/css/barriecito');
 body {
 	font-family: "Roboto", sans-serif;
