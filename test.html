@@ -62,7 +62,7 @@
             }
 
             .thumbnail {
-                width: 88vw;
+                width: 88vw !important;
                 gap: 1.5rem;
             }
             button{
@@ -145,6 +145,12 @@
                 width: 48%;
                 border-radius: 25px;
             }
+            .mobScreen{
+                display: block;
+            }
+            .wideScreen {
+                display: none;
+            }
             
         }
     </style>
@@ -153,52 +159,108 @@
 
     <main class="imageList">
 
-        <div class="card">
+        <div class="card wideScreen">
             <img src="images/webTemp/above_education.png" class="thumbnail" alt="Above Educational">
-            <div class="buttonSection">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+            <div class="buttonSection" style="display: inline-block;">
                 <a href="above-educational/index.html" class="demoButton">Demo</a>
                 <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
             </div>
-            <p>Duration: 5 to 7days</p>
+            
+        </div>
+        <div class="card mobScreen">
+            <img src="images/webTemp/above_educational_mob.png" class="thumbnail" alt="Above Educational">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+            <div class="buttonSection" style="display: inline-block;">
+                <a href="above-educational/index.html" class="demoButton">Demo</a>
+                <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
+            </div>
+            
         </div>
 
-        <div class="card">
+        <div class="card wideScreen">
             <img src="images/webTemp/aero_sky.png" class="thumbnail" alt="Aero Sky">
-            <div class="buttonSection">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+            <div class="buttonSection" style="display: inline-block;">
                 <a href="aerosky-real-estate/index.html" class="demoButton">Demo</a>
                 <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
             </div>
-            <p>Duration: 5 to 7days</p>
+            
+        </div>
+        <div class="card mobScreen">
+            <img src="images/webTemp/aer_sky_mob.png" class="thumbnail" alt="Aero Sky">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+            <div class="buttonSection" style="display: inline-block;">
+                <a href="aerosky-real-estate/index.html" class="demoButton">Demo</a>
+                <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
+            </div>
+            
         </div>
 
-        <div class="card">
+        <div class="card wideScreen">
             <img src="images/webTemp/avenger.png" class="thumbnail" alt="model1">
-            <div class="buttonSection">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+
+            <div class="buttonSection" style="display: inline-block;">
                 <a href="avenger-multi-purpose/index.html" class="demoButton">Demo</a>
                 <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
             </div>
-            <p>Duration: 5 to 7days</p>
 
         </div>
-        <div class="card">
-            <img src="images/webTemp/photography.png" class="thumbnail" alt="model1">
-            <div class="buttonSection">
-                <a href="amaze-photography/index.html" class="demoButton">Demo</a>
+
+        <div class="card mobScreen">
+            <img src="images/webTemp/avenger_mob.png" class="thumbnail" alt="model1">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+
+            <div class="buttonSection" style="display: inline-block;">
+                <a href="avenger-multi-purpose/index.html" class="demoButton">Demo</a>
                 <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
             </div>
-            <p>Duration: 5 to 7days</p>
 
         </div>
-        <div class="card">
+        <div class="card wideScreen">
+            <img src="images/webTemp/photography.png" class="thumbnail" alt="model1">
+            <div>
+                <p style="display: inline-block;">Duration: 5 to 7days</p>
+                <div class="buttonSection" style="display: inline-block;">
+                    <a href="amaze-photography/index.html" class="demoButton">Demo</a>
+                    <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card mobScreen">
+            <img src="images/webTemp/photography_mob.png" class="thumbnail" alt="model1">
+            <div>
+                <p style="display: inline-block;">Duration: 5 to 7days</p>
+                <div class="buttonSection" style="display: inline-block;">
+                    <a href="amaze-photography/index.html" class="demoButton">Demo</a>
+                    <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card wideScreen">
             <img src="images/webTemp/beautyspa.png" class="thumbnail" alt="model1">
-            <div class="buttonSection">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+            <div class="buttonSection" style="display: inline-block;">
                 <a href="aroma-beauty-spa/index.html" class="demoButton">Demo</a>
                 <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
             </div>
-            <p>Duration: 5 to 7days</p>
 
         </div>
-        <div class="card">
+
+        <div class="card mobScreen">
+            <img src="images/webTemp/beautyspa_mob.png" class="thumbnail" alt="model1">
+            <p style="display: inline-block;">Duration: 5 to 7days</p>
+            <div class="buttonSection" style="display: inline-block;">
+                <a href="aroma-beauty-spa/index.html" class="demoButton">Demo</a>
+                <button onclick="showPopup(this.parentElement.previousElementSibling)"> Select</button>
+            </div>
+
+        </div>
+        <div class="card wideScreen">
             <img src="images/webTemp/Restaurent.png" class="thumbnail" alt="model1">
             <div class="buttonSection">
                 <a href="beauty-salon/index.html" class="demoButton">Demo</a>
@@ -207,7 +269,7 @@
             <p>Duration: 5 to 7days</p>
 
         </div>
-        <div class="card">
+        <div class="card wideScreen">
             <img src="images/banner1.png" class="thumbnail" alt="model1">
             <div class="buttonSection">
                 <button>Demo</button>
@@ -216,7 +278,7 @@
             <p>Duration: 5 to 7days</p>
 
         </div>
-        <div class="card">
+        <div class="card wideScreen">
             <img src="images/banner1.png" class="thumbnail" alt="model1">
             <div class="buttonSection">
                 <button>Demo</button>
