@@ -412,6 +412,9 @@ padding: 70px 0;
   .c4{
     display: inline-block;
   }
+  .landtext h2 {
+	margin: 0 auto;
+  }
   h2{
     font-size: 32px;
     margin-top: 1%;
@@ -422,8 +425,8 @@ padding: 70px 0;
       font-family: 'Barriecito';
       overflow: hidden;
       border-right: .15em transparent orange;
-	  text-align: center;
-	  margin-inline: auto;
+	  
+	  /* margin-inline: auto; */
 	  width: 0;
       white-space: nowrap; 
       animation: 
@@ -489,9 +492,14 @@ padding: 70px 0;
 	.banner{
 		height: 130%;
 	}
-
 	.ban_img{
-		width: 80%;
+		width: 70%;
+		max-width: 400px;
+	}
+}
+@media (max-width :600px) {
+	.ban_img{
+		width: 70%;
 		max-width: 400px;
 	}
 }
@@ -898,6 +906,10 @@ padding: 10px 0;
 	}
 }
 @media (min-width:768px) and (max-width:991px) {
+	.ban_img{
+		width: 40%;
+		max-width: 400px;
+	}
 	.main-navigation .container-fluid {
 		padding-left: 0;
 		padding-right: 0;
