@@ -63,6 +63,13 @@ h1 {
     max-width: 700px;
 }
 
+.popup img {
+    margin: auto;
+    display: block;
+    max-height: 50vh;
+    /* width: 90vw; */
+    max-width: 700px;
+}
 .popup .close {
     position: absolute;
     top: 15px;
@@ -94,8 +101,10 @@ h1 {
 
 .contactInput{
     width: 80%;
-    height: 50px;
+    height: 50px!important;
     border: none;
+    background-color: #d7d1c5;
+    margin: 2px auto !important;
     outline: none;
     margin-top: 8px;
     margin-left: auto;
@@ -118,7 +127,7 @@ h1 {
   min-width: 80%;
   width: 80%;
   text-align: justify;
-  color: #eda735;
+  color: #eda735!important;
 
 }
 
