@@ -23,3 +23,14 @@ Options -Indexes
 Order allow,deny
 Deny from all
 </Files>
+
+RewriteEngine On
+
+# Redirect requests for pricing.html to pricing/
+RewriteCond %{REQUEST_URI} ^/pricing\.html$ [NC]
+RewriteRule ^(.*)$ /pricing/ [R=301,L]
+
+# Internally handle requests to pricing/ as pricing.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^pricing/$ /pricing.html [L]
