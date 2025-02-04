@@ -1,274 +1,72 @@
-body{
-  padding: 10px;
-}
-
-button{
-	display: flex;
-	align-items: center;
-	padding: 15px 30px;
-	font-size: 16px;
-	color: #eda735;
-	gap: 10px;
-	border: none;
-	border-radius: 50px;
-	background: black;
-	cursor: pointer;
-
-}
-
-.cbxtags{
-  text-align: center;
-  background-color: #eda735;
-  border: none;
-  border-radius: 10px;
-}
-.cbxtags ul
-{
-  list-style: none;
-  padding: 20px;
-}
-
-.cbxtags li{
-   display: inline;
-}
-
-.cbxtags li label{
-  display: inline-block;
-    background-color: rgba(255, 255, 255, .9);
-    border: 2px solid rgba(139, 139, 139, .3);
-    color: #adadad;
-    border-radius: 25px;
-    white-space: nowrap;
-    margin: 3px 0px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: all .2s;
-}
-
-.cbxtags li label{
-   padding: 8px 12px;
-    cursor: pointer;
-}
-
-.cbxtags li label::before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 12px;
-    padding: 2px 6px 2px 2px;
-    content: "+";
-    transition: transform .3s ease-in-out;
-}
-
-
-.cbxtags li input[type="checkbox"]:checked + label::before {
-    content: none;
-    transform: rotate(-360deg);
-    transition: transform .3s ease-in-out;
-}
-
-.cbxtags li input[type="checkbox"]:checked + label {
-    border: 2px solid #1bdbf8;
-    background-color: #12bbd4;
-    color: #fff;
-    transition: all .2s;
-}
-
-.cbxtags li input[type="checkbox"] {
-  display: absolute;
-}
-.cbxtags li input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-}
-.cbxtags li input[type="checkbox"]:focus + label {
-  border: 2px solid #e9a1ff;
-}
-
-
-.fouimg{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  border: none;
-  border-radius: 150px;
-  align-content: center;
-}
-
-.found{
-  align-items: center;
-  text-align: center;
-  vertical-align: middle;
-  padding: 15px;
-}
-
-.foundersinfo{
-  padding-top: 120px;
-  background: linear-gradient(0deg, #d7d1c5, #eda735);
-}
-
-.title{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-form{
-	background-color: #eda735;
-	color: #000;
-	border: none;
-	border-radius: 50px;
-	padding: 20px;
-}
-
-h2{
-	font-weight: 500;
-	font-size: 40px;
-	color: black;
-	margin-bottom: 5px;
-}
-
-.contact_input{
-	width: auto;
-	height: 50px;
-	border: none;
-	outline: none;
-	margin-top: 20px;
-	text-align: justify;
-	padding: 2%;
-	font-weight: 500 ;
-	color: #333333;
-	border-radius: 50px;
-}
-
-.consec textarea{
-	height: 140px;
-	padding-top: 15px;
-	border-radius: 20px;
-}
-
-.contact_input:focus{
-	border: 2px solid grey;
-}
-
-.contact_input::placeholder{
-  display: block;
-	text-align: justify;
-	color: #eda735;
-}
-
-.consec{
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.linkedinbtn{
-  margin: 10px;
-  font-size: large;
-  font-weight: 300;
-  background-color: #000;
-  padding: 15px;
-  border-radius: 16px;
-  margin: 10px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #eee;
-  color: #111;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #f4f4f4;
 }
 
-:root {
-  --marquee-width: 80vw;
-  --marquee-height: 20vh;
-  /* --marquee-elements: 12; */ /* defined with JavaScript */
-  --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
 }
 
-.marquee {
-  width: var(--marquee-width);
-  height: var(--marquee-height);
-  background-color: #111;
-  color: #eee;
-  overflow: hidden;
-  position: relative;
-}
-.marquee:before, .marquee:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-}
-.marquee:before {
-  left: 0;
-  background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-.marquee:after {
-  right: 0;
-  background: linear-gradient(to left, #111 0%, transparent 100%);
-}
-.marquee-content {
+nav ul {
   list-style: none;
-  height: 100%;
   display: flex;
-  animation: scrolling var(--marquee-animation-duration) linear infinite;
-}
-/* .marquee-content:hover {
-  animation-play-state: paused;
-} */
-@keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
-}
-.marquee-content li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  flex-shrink: 0;
-  width: var(--marquee-element-width);
-  max-height: 100%;
-  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
-  white-space: nowrap;
+  justify-content: space-around;
 }
 
-.marquee-content li img {
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.join-community {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.search-results h1 {
+  font-size: 1.5rem;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.category {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.promo-section {
+  width: 20%;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  /* height: 100%; */
-  border: 2px solid #eee;
-}
-
-@media (max-width: 600px) {
-  html { font-size: 12px; }
-  :root {
-    --marquee-width: 100vw;
-    --marquee-height: 16vh;
-    --marquee-elements-displayed: 3;
-  }
-  .marquee:before, .marquee:after { width: 5rem; }
 }
