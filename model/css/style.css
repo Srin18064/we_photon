@@ -116,6 +116,8 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
     background-color: #eda735;
     height: 70px;
     margin: auto;
+    width: 100vw;
+    position: fixed;
 }
 
 .wideNavigation a:hover {
@@ -203,4 +205,103 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+/*  view page */
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.header h1 {
+    margin: 0;
+    color: #333;
+}
+.breadcrumb {
+    margin: 10px 0;
+    color: #666;
+}
+.main {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+}
+.main h2 {
+    margin: 0;
+}
+.ongoing-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.search-location {
+    margin: 20px 0;
+}
+.search-location select {
+    padding: 10px;
+    width: 200px;
+}
+.projects {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.project {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+}
+
+@media (max-width : 600px) {
+    .project{
+        width: 80vw;
+    }
+    
+}
+
+@media (min-width : 600px) and (max-width: 900px) {
+    .project {
+        width: 40vw;
+    }
+}
+.project img {
+    width: 100%;
+    height: auto;
+}
+.project h3 {
+    margin: 10px 0;
+    color: #003366;
+}
+.project p {
+    color: #666;
+}
+
+
+/*  footer */
+
+.footerGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footerContenSec ul li {
+    list-style: none;
+}
+
+.footerContenSec ul h3 {
+    margin: 8px auto;
 }
