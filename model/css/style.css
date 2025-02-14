@@ -302,6 +302,20 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
     list-style: none;
 }
 
-.footerContenSec ul h3 {
+.footerContenSec h3 {
     margin: 8px auto;
+    padding-left: 40px;
+}
+
+@media (max-width :600px ) {
+
+    .footerGrid {
+        font-size: 14px;
+    }
+    .menuItems li {
+        display: inline-block;
+        gap: 12px;
+        line-height: 1.5;
+        margin: 0 4px;
+    }
 }

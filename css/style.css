@@ -202,7 +202,7 @@ color: #000;
 }
 .section {
 	background-color: #d7d1c5;
-	padding: 80px 0;
+	padding: 16px 0;
 	border: none;
 	border-radius: 50px;
 }
@@ -364,7 +364,7 @@ box-shadow: 0 0 5px 2px grey;
 	padding-bottom: 0;
 }
 .secPadding{
-padding: 70px 0;
+padding: 20px 0;
 }
 /* Sections
 ----------------------------------------------------------------------------- */
@@ -922,6 +922,13 @@ padding: 10px 0;
 	.header.navbar-fixed-top {
 		position: absolute;
 	}
+	.ser_sec {
+		margin: 20px 0 !important;
+	}
+}
+
+.ser_sec img {
+	aspect-ratio: 1 / 1;
 }
 
 /* Fixed Header
