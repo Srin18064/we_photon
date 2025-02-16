@@ -178,11 +178,11 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-// function disableRightClick(event) {
-//     if (event.button == 2) {
-//         event.preventDefault();
-//         alert("Right click disabled.");
-//         return false;
-//     }
-// }
-// document.addEventListener('contextmenu', disableRightClick);
+const marquee1ElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee1-elements-displayed");
+const marquee1Content = document.querySelector("ul.marquee1-content");
+
+root.style.setProperty("--marquee1-elements", marquee1Content.children.length);
+
+for(let i=0; i<marquee1ElementsDisplayed; i++) {
+  marquee1Content.appendChild(marquee1Content.children[i].cloneNode(true));
+}

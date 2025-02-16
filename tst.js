@@ -1,9 +1,9 @@
 const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-const marqueeContent = document.querySelector("ul.marquee-content");
+const marquee1ElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee1-elements-displayed");
+const marquee1Content = document.querySelector("ul.marquee1-content");
 
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+root.style.setProperty("--marquee1-elements", marquee1Content.children.length);
 
-for(let i=0; i<marqueeElementsDisplayed; i++) {
-  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+for(let i=0; i<marquee1ElementsDisplayed; i++) {
+  marquee1Content.appendChild(marquee1Content.children[i].cloneNode(true));
 }
