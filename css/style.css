@@ -699,7 +699,7 @@ text-align:center;
 	border-radius: 0;
 	padding: 8px 20px;
 	border: 1px solid #cacaca;
-	color: #666666;
+	color: #000000;
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -785,7 +785,7 @@ padding: 10px 0;
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-	color: grey;
+	color: black;
 }
 
 /* carousel */
@@ -1342,8 +1342,13 @@ border-radius: 50%;
 	font-weight: 500 ;
 	color: #333333;
 	border-radius: 50px;
+	background-color: #d7d1c5;
 }
 
+input::placeholder {
+	color: #000000;
+}
+  
 .contact_right textarea{
 	height: 140px;
 	padding-top: 15px;

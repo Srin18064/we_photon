@@ -321,8 +321,14 @@
 	text-align: justify;
 	padding-left: 25px;
 	font-weight: 500 ;
+  background-color: #d7d1c5;
 	color: #333333;
 	border-radius: 50px;
+}
+
+.contactInput::placeholder {
+  font: 16px sans-serif;
+  color: #000000;
 }
 
 .contact_right textarea{
@@ -332,7 +338,7 @@
 }
 
 .contact_input:focus{
-	border: 2px solid grey;
+	border: 2px solid black;
 }
 
 .contact_input::placeholder{
