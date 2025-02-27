@@ -1317,17 +1317,16 @@ border-radius: 50%;
 .contact_left_title h2{
 	font-weight: 500;
 	color: black;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 .contact_left_title hr{
 	border: none;
 	width: 120px;
 	height: 4px;
-	margin-left: 20px;
+	margin: 1px auto 4px 20px;
 	background-color: black;
 	border-radius: 10px;
-	margin-bottom: 20px;
 
 }
 
@@ -1912,4 +1911,18 @@ input::placeholder {
     --marquee1-elements-displayed: 3;
   }
   .marquee1:before, .marquee1:after { width: 5rem; }
+}
+
+
+
+/* Change placeholder color for specific input fields with class 'contact_input' */
+input.contact_input::placeholder {
+    color: #999; /* Change this color to your desired placeholder color */
+    opacity: 1; /* Firefox */
+}
+
+/* Change placeholder color for specific textarea fields with class 'contact_input' */
+textarea.contact_input::placeholder {
+    color: #999; /* Change this color to your desired placeholder color */
+    opacity: 1; /* Firefox */
 }
