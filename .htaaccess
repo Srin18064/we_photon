@@ -1,36 +1,3 @@
-# Enable Rewrite Engine
 RewriteEngine On
-
-# Redirect HTTP to HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Custom 404 Error Page
-ErrorDocument 404 /404.html
-
-# Protect the contact form page from direct access
-<Files "contact.php">
-   <Limit GET POST>
-        Require all granted
-    </Limit>
-</Files>
-
-# Disable Directory Listing
-Options -Indexes
-
-# Deny Access to .htaccess file itself
-<Files .htaccess>
-Order allow,deny
-Deny from all
-</Files>
-
-RewriteEngine On
-
-# Redirect requests for pricing.html to pricing/
-RewriteCond %{REQUEST_URI} ^/pricing\.html$ [NC]
-RewriteRule ^(.*)$ /pricing/ [R=301,L]
-
-# Internally handle requests to pricing/ as pricing.html
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^pricing/$ /pricing.html [L]
+    RewriteRule ^pricing$ pricing.html [L]
+    RewriteRule ^about$ about.html [L]
