@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette */
+  --color-amber: #eda735;
+  --color-platinum: #d7d1c5;
+  --color-abyss: #05070c;
+  --color-midnight: #0b0f19;
+
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+
+  --animate-pulse-live: pulse-live 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-marquee: marquee 32s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes pulse-live {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.45);
+    }
+    50% {
+      box-shadow: 0 0 0 6px rgba(52, 211, 153, 0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--color-abyss);
+  color: #f5f4f1;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: rgba(237, 167, 53, 0.35);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
