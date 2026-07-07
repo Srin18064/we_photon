@@ -67,7 +67,7 @@ export default function Pricing() {
             return (
               <article
                 key={tier.name}
-                className={`relative flex flex-col rounded-3xl border p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 ${
+                className={`relative flex flex-col rounded-3xl border p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 ${
                   tier.popular
                     ? "border-amber/60 bg-white/[0.05] shadow-[0_0_44px_rgba(237,167,53,0.22)] hover:shadow-[0_0_64px_rgba(237,167,53,0.35)]"
                     : "border-white/10 bg-white/[0.03] hover:border-amber/40 hover:shadow-[0_0_36px_rgba(237,167,53,0.15)]"

@@ -20,7 +20,7 @@ const pillars = [
 
 export default function WhoAreWe() {
   return (
-    <section id="who-are-we" className="relative scroll-mt-20 py-24">
+    <section id="who-are-we" className="relative overflow-hidden scroll-mt-20 py-24">
       <div
         aria-hidden
         className="pointer-events-none absolute top-0 -right-40 h-96 w-96 rounded-full bg-[radial-gradient(closest-side,rgba(237,167,53,0.08),transparent)]"
@@ -57,7 +57,7 @@ export default function WhoAreWe() {
             {pillars.map(({ icon: Icon, title, text }) => (
               <li
                 key={title}
-                className="group flex gap-5 rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_36px_rgba(237,167,53,0.15)]"
+                className="group flex gap-5 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_36px_rgba(237,167,53,0.15)]"
               >
                 <div className="inline-flex h-fit rounded-2xl border border-amber/30 bg-amber/10 p-3">
                   <Icon className="size-5 text-amber" aria-hidden />
