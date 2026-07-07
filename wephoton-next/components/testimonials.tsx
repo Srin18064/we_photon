@@ -39,7 +39,7 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <figure
               key={t.name}
-              className="flex flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_36px_rgba(237,167,53,0.15)]"
+              className="flex flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_36px_rgba(237,167,53,0.15)]"
             >
               <Quote className="size-7 text-amber/60" aria-hidden />
               <div className="mt-4 flex gap-1" aria-label="5 out of 5 stars">

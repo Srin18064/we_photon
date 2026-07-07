@@ -42,7 +42,7 @@ export default function Partners() {
             <li
               key={`${name}-${i}`}
               aria-hidden={i >= partners.length}
-              className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-4 backdrop-blur-md"
+              className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-4 md:backdrop-blur-md"
             >
               <Icon className="size-5 shrink-0 text-platinum/70" aria-hidden />
               <span className="whitespace-nowrap font-display text-sm font-semibold tracking-wide text-platinum/80">

@@ -35,6 +35,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* Decorative glows are clipped per-section, but clip here too so no
+     stray element can ever open a horizontal scroll gutter. */
+  overflow-x: clip;
 }
 
 @media (prefers-reduced-motion: reduce) {

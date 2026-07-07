@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Send } from "lucide-react";
 
 const inputClasses =
-  "w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-platinum/50 backdrop-blur-md transition-colors focus:border-amber/60 focus:outline-none";
+  "w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-platinum/50 md:backdrop-blur-md transition-colors focus:border-amber/60 focus:outline-none";
 
 /**
  * Opens the visitor's email client with a prefilled message to

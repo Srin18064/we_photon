@@ -10,7 +10,7 @@ export default function DawingoTeaser() {
         className="pointer-events-none absolute top-10 left-1/2 h-[24rem] w-[60rem] max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(237,167,53,0.12),transparent)]"
       />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="overflow-hidden rounded-3xl border border-amber/30 bg-white/[0.04] p-10 backdrop-blur-md sm:p-14">
+        <div className="overflow-hidden rounded-3xl border border-amber/30 bg-white/[0.04] p-10 md:backdrop-blur-md sm:p-14">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-4 py-1.5 font-display text-[11px] font-bold uppercase tracking-widest text-amber">

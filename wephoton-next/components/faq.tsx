@@ -49,7 +49,7 @@ export default function Faq() {
         {faqs.map((faq) => (
           <details
             key={faq.q}
-            className="group rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md transition-colors open:border-amber/40"
+            className="group rounded-2xl border border-white/10 bg-white/[0.03] md:backdrop-blur-md transition-colors open:border-amber/40"
           >
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-display font-semibold text-white [&::-webkit-details-marker]:hidden">
               {faq.q}

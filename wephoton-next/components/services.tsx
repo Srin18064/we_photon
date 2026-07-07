@@ -23,7 +23,7 @@ export default function Services() {
         {/* Asymmetric split: 7/5 on desktop */}
         <div className="mt-14 grid gap-6 lg:grid-cols-12">
           {/* Custom Software Development — dominant cell */}
-          <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_48px_rgba(237,167,53,0.15)] lg:col-span-7 lg:p-12">
+          <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_48px_rgba(237,167,53,0.15)] lg:col-span-7 lg:p-12">
             <div
               aria-hidden
               className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[radial-gradient(closest-side,rgba(237,167,53,0.14),transparent)] opacity-70 transition-opacity duration-300 group-hover:opacity-100"
@@ -57,7 +57,7 @@ export default function Services() {
           </article>
 
           {/* Mobile Application Development */}
-          <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_48px_rgba(237,167,53,0.15)] lg:col-span-5 lg:p-12">
+          <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_48px_rgba(237,167,53,0.15)] lg:col-span-5 lg:p-12">
             <div
               aria-hidden
               className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[radial-gradient(closest-side,rgba(237,167,53,0.12),transparent)]"

@@ -53,7 +53,7 @@ export default function ContactPage() {
             {channels.map(({ icon: Icon, label, value, href }) => (
               <li
                 key={label}
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-3.5 backdrop-blur-md"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-3.5 md:backdrop-blur-md"
               >
                 <Icon className="size-4 text-amber" aria-hidden />
                 <span className="text-xs uppercase tracking-widest text-platinum/60">{label}</span>
@@ -69,7 +69,7 @@ export default function ContactPage() {
           </ul>
 
           <div className="mt-16 grid gap-16 lg:grid-cols-2">
-            <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-8 backdrop-blur-md sm:p-10">
+            <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:backdrop-blur-md sm:p-10">
               <ContactForm />
             </div>
             <Faq />
