@@ -42,7 +42,7 @@ export default function DawingoTeaser() {
                 className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(closest-side,rgba(237,167,53,0.14),transparent)]"
               />
               <Image
-                src="/brand/dawingo-resto.png"
+                src="/brand/dawingo-resto-v2.png"
                 alt="Dawingo Resto — live now"
                 width={380}
                 height={115}

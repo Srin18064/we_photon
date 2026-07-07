@@ -40,7 +40,7 @@ export default function DawingoGrid() {
           </div>
 
           <Image
-            src="/brand/dawingo-resto.png"
+            src="/brand/dawingo-resto-v2.png"
             alt="Dawingo Resto"
             width={280}
             height={85}
