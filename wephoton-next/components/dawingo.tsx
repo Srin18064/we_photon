@@ -44,7 +44,7 @@ export default function DawingoGrid() {
             alt="Dawingo Resto"
             width={280}
             height={85}
-            className="mt-8 h-14 w-auto"
+            className="mt-8 h-14 w-auto self-start"
           />
 
           <p className="mt-6 leading-relaxed text-platinum">
