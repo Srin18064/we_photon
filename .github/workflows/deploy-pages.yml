@@ -1,12 +1,11 @@
-name: Deploy to GitHub Pages
+name: Deploy WePhoton to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, github-hosting]
     paths:
       - "wephoton-next/**"
       - ".github/workflows/deploy-pages.yml"
-  # Manual deploys from any branch (e.g. preview the redesign before merge)
   workflow_dispatch:
 
 permissions:
@@ -14,10 +13,9 @@ permissions:
   pages: write
   id-token: write
 
-# One deploy at a time; don't cancel a production deploy mid-flight
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -26,9 +24,11 @@ jobs:
       run:
         working-directory: wephoton-next
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
@@ -37,11 +37,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
       - name: Build static export
         run: npm run build
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
