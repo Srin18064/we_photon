@@ -4,7 +4,7 @@ import PolicyPage from "@/components/policy-page";
 export const metadata: Metadata = {
   title: "Payments, Cancellations & Refunds",
   description:
-    "WePhoton's payment terms, project cancellation rules, and refund policy for software development and Dawingo SaaS subscriptions.",
+    "Wephoton's payment terms, project cancellation rules, and refund policy for software development and Dawingo SaaS subscriptions.",
 };
 
 export default function PaymentsRefundsPolicy() {
@@ -99,7 +99,7 @@ export default function PaymentsRefundsPolicy() {
             periods.
           </li>
           <li>
-            If WePhoton is unable to deliver the agreed scope and the project
+            If Wephoton is unable to deliver the agreed scope and the project
             is terminated by us, you receive a refund for the undelivered
             portion of the paid amount.
           </li>
@@ -119,7 +119,7 @@ export default function PaymentsRefundsPolicy() {
         <h2>4. Chargebacks & Disputes</h2>
         <p>
           If you believe a charge is incorrect, contact us first at{" "}
-          <a href="mailto:support@wephoton.in">support@wephoton.in</a> — most
+          <a href="mailto:support@wephoton.in">support@wephoton.in</a> · most
           billing issues are resolved within a few business days. Raising a
           chargeback without contacting us may lead to suspension of services
           while the dispute is investigated.

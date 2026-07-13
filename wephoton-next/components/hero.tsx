@@ -36,9 +36,9 @@ export default function Hero() {
         </h1>
 
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-platinum">
-          WePhoton designs and builds custom enterprise software and
-          high-performance mobile applications — scalable backends, native and
-          cross-platform apps, and the Dawingo Multiverse — our own SaaS
+          Wephoton designs and builds custom enterprise software and
+          high-performance mobile applications · scalable backends, native and
+          cross-platform apps, and the Dawingo Multiverse · our own SaaS
           product family.
         </p>
 

@@ -37,10 +37,10 @@ export default function Navbar() {
         aria-label="Main"
         className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
       >
-        <Link href="/" className="flex items-center gap-2" aria-label="WePhoton home">
+        <Link href="/" className="flex items-center gap-2" aria-label="Wephoton home">
           <Image
             src="/brand/wephoton-logo.png"
-            alt="WePhoton — Bridge to People"
+            alt="Wephoton · Bridge to People"
             width={168}
             height={45}
             preload

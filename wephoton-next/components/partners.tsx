@@ -9,7 +9,7 @@ import {
   Truck,
 } from "lucide-react";
 
-/* Placeholder partner marks — swap each icon + name for a real partner logo image */
+/* Placeholder partner marks · swap each icon + name for a real partner logo image */
 const partners = [
   { icon: Building2, name: "Northgate Group" },
   { icon: Store, name: "Urban Basket" },

@@ -15,13 +15,13 @@ export default function DawingoTeaser() {
             <div>
               <p className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-4 py-1.5 font-display text-[11px] font-bold uppercase tracking-widest text-amber">
                 <Rocket className="size-3.5" aria-hidden />
-                New Launch — Our Own Product
+                New Launch · Our Own Product
               </p>
               <h2 className="mt-6 font-display text-4xl font-bold tracking-tight sm:text-5xl">
                 The Dawingo Multiverse
               </h2>
               <p className="mt-5 max-w-xl leading-relaxed text-platinum">
-                Our proprietary SaaS family — 19 products covering restaurants,
+                Our proprietary SaaS family · 19 products covering restaurants,
                 hotels, schools, hospitals, retail, and more. Dawingo Resto is
                 live today; the rest of the multiverse is on its way.
               </p>
@@ -43,7 +43,7 @@ export default function DawingoTeaser() {
               />
               <Image
                 src="/brand/dawingo-resto-v2.png"
-                alt="Dawingo Resto — live now"
+                alt="Dawingo Resto · live now"
                 width={380}
                 height={115}
                 className="relative h-auto w-full max-w-sm"

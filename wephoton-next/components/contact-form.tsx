@@ -18,13 +18,13 @@ export default function ContactForm() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const subject = encodeURIComponent(
-      `Project enquiry — ${data.get("interest")} (${data.get("name")})`
+      `Project enquiry · ${data.get("interest")} (${data.get("name")})`
     );
     const body = encodeURIComponent(
       [
         `Name: ${data.get("name")}`,
         `Email: ${data.get("email")}`,
-        `Phone: ${data.get("phone") || "—"}`,
+        `Phone: ${data.get("phone") || "·"}`,
         `Interested in: ${data.get("interest")}`,
         "",
         `${data.get("message")}`,

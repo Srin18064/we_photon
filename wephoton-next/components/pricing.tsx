@@ -57,7 +57,7 @@ export default function Pricing() {
           Transparent starting points.
         </h2>
         <p className="mt-4 max-w-xl text-platinum">
-          Every engagement is scoped to your requirements — these are the
+          Every engagement is scoped to your requirements · these are the
           floors, not the ceilings.
         </p>
 

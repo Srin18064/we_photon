@@ -5,7 +5,7 @@ import PolicyPage from "@/components/policy-page";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
-    "The terms governing use of wephoton.in, WePhoton development services, and Dawingo SaaS products.",
+    "The terms governing use of wephoton.in, Wephoton development services, and Dawingo SaaS products.",
 };
 
 export default function TermsAndConditions() {
@@ -14,7 +14,7 @@ export default function TermsAndConditions() {
       <section>
         <h2>1. Agreement</h2>
         <p>
-          By using wephoton.in, engaging WePhoton for development services, or
+          By using wephoton.in, engaging Wephoton for development services, or
           subscribing to a Dawingo product, you agree to these terms. Where a
           signed project agreement or subscription contract exists, that
           document prevails over these general terms in case of conflict.
@@ -24,7 +24,7 @@ export default function TermsAndConditions() {
       <section>
         <h2>2. Services</h2>
         <p>
-          WePhoton provides custom software development, mobile application
+          Wephoton provides custom software development, mobile application
           development, e-commerce platform engineering, and proprietary SaaS
           products under the Dawingo brand. Scope, timelines, and deliverables
           for each engagement are defined in a written quotation or agreement.
@@ -72,11 +72,11 @@ export default function TermsAndConditions() {
           </li>
           <li>
             Dawingo products, including their code, design, and branding,
-            remain the exclusive property of WePhoton. Subscriptions grant a
+            remain the exclusive property of Wephoton. Subscriptions grant a
             non-transferable right to use the service, not ownership.
           </li>
           <li>
-            WePhoton may reference completed non-confidential work in its
+            Wephoton may reference completed non-confidential work in its
             portfolio unless agreed otherwise in writing.
           </li>
         </ul>
@@ -95,7 +95,7 @@ export default function TermsAndConditions() {
       <section>
         <h2>7. Limitation of Liability</h2>
         <p>
-          To the maximum extent permitted by law, WePhoton&apos;s total
+          To the maximum extent permitted by law, Wephoton&apos;s total
           liability for any claim arising from a service or product is limited
           to the amount you paid for that service or product in the preceding
           six months. We are not liable for indirect or consequential losses,

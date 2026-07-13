@@ -17,25 +17,25 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wephoton.in"),
   title: {
-    default: "WePhoton — Software & Mobile App Development",
-    template: "%s | WePhoton",
+    default: "Wephoton · Software & Mobile App Development",
+    template: "%s | Wephoton",
   },
   description:
-    "WePhoton engineers enterprise software, high-performance mobile applications, and the Dawingo Multiverse SaaS product family.",
+    "Wephoton engineers enterprise software, high-performance mobile applications, and the Dawingo Multiverse SaaS product family.",
   keywords: [
     "software development",
     "mobile app development",
     "enterprise software",
     "SaaS",
     "Dawingo",
-    "WePhoton",
+    "Wephoton",
   ],
   openGraph: {
-    title: "WePhoton — Software & Mobile App Development",
+    title: "Wephoton · Software & Mobile App Development",
     description:
       "Enterprise software, mobile applications, and the Dawingo Multiverse.",
     url: "https://wephoton.in",
-    siteName: "WePhoton",
+    siteName: "Wephoton",
     type: "website",
   },
 };

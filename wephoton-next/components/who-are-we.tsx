@@ -4,7 +4,7 @@ const pillars = [
   {
     icon: Code2,
     title: "Engineers first",
-    text: "Every product we ship is architected, coded, and stress-tested by our own engineering team — no outsourced shortcuts.",
+    text: "Every product we ship is architected, coded, and stress-tested by our own engineering team · no outsourced shortcuts.",
   },
   {
     icon: HeartHandshake,
@@ -39,7 +39,7 @@ export default function WhoAreWe() {
               ?
             </h2>
             <p className="mt-6 max-w-xl leading-relaxed text-platinum">
-              <strong className="text-white">WE</strong> are WePhoton — a
+              <strong className="text-white">WE</strong> are Wephoton · a
               software engineering company that designs, builds, and runs
               enterprise software and mobile applications. The{" "}
               <strong className="text-white">WE</strong> is deliberate: every
@@ -47,8 +47,8 @@ export default function WhoAreWe() {
               a bridge between your idea and the people it serves.
             </p>
             <p className="mt-4 max-w-xl leading-relaxed text-platinum">
-              From custom backends to the Dawingo Multiverse — our own family
-              of SaaS products — everything we ship carries the same standard:
+              From custom backends to the Dawingo Multiverse · our own family
+              of SaaS products · everything we ship carries the same standard:
               production-grade, scalable, and built to last.
             </p>
           </div>

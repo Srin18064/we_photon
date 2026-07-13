@@ -25,7 +25,7 @@ export default function DawingoGrid() {
 
   return (
     <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      {/* Featured live cell — Dawingo Resto, 2×2 square */}
+      {/* Featured live cell · Dawingo Resto, 2×2 square */}
       <article className="group relative overflow-hidden rounded-3xl border border-amber/30 bg-white/[0.04] p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/60 hover:shadow-[0_0_56px_rgba(237,167,53,0.25)] sm:col-span-2 sm:row-span-2">
         <div
           aria-hidden
@@ -49,7 +49,7 @@ export default function DawingoGrid() {
 
           <p className="mt-6 leading-relaxed text-platinum">
             {resto.tagline}. Orders, kitchen displays, billing, inventory, and
-            analytics for restaurants — live today and running in production.
+            analytics for restaurants · live today and running in production.
           </p>
 
           <div className="mt-auto pt-8">
