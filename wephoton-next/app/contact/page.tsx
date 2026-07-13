@@ -8,7 +8,7 @@ import { Mail, Phone, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with WePhoton for app, software, and website development — or browse answers to frequently asked questions.",
+    "Get in touch with Wephoton for app, software, and website development · or browse answers to frequently asked questions.",
 };
 
 const channels = [

@@ -86,14 +86,14 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Image
               src="/brand/wephoton-logo.png"
-              alt="WePhoton — Bridge to People"
+              alt="Wephoton · Bridge to People"
               width={190}
               height={51}
               className="h-10 w-auto"
             />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-platinum">
               Custom software, enterprise mobile applications, and the Dawingo
-              Multiverse — engineered in India, built for the world.
+              Multiverse · engineered in India, built for the world.
             </p>
             <ul className="mt-6 space-y-2.5 text-sm text-platinum">
               <li>
@@ -148,7 +148,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-8 sm:flex-row sm:items-center">
           <p className="text-xs text-platinum/70">
-            © {new Date().getFullYear()} WePhoton. All rights reserved.
+            © {new Date().getFullYear()} Wephoton. All rights reserved.
           </p>
           <ul className="flex items-center gap-3" aria-label="Social media">
             {socials.map(({ href, label, Icon }) => (
@@ -157,7 +157,7 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`WePhoton on ${label}`}
+                  aria-label={`Wephoton on ${label}`}
                   className="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-platinum transition-all duration-300 hover:-translate-y-1 hover:border-amber/50 hover:text-amber hover:shadow-[0_0_20px_rgba(237,167,53,0.25)]"
                 >
                   <Icon className="size-4" />

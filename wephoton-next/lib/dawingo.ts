@@ -49,7 +49,7 @@ export const dawingoProducts: DawingoProduct[] = [
   { name: "Dawingo Link", tagline: "Supply Chain Management", status: "coming-soon", icon: Link2 },
   {
     name: "Dawingo Core",
-    tagline: "All-in-one ERP — HRM, Inventory, Finance, CRM & Supply Chain",
+    tagline: "All-in-one ERP · HRM, Inventory, Finance, CRM & Supply Chain",
     status: "coming-soon",
     icon: Layers3,
   },

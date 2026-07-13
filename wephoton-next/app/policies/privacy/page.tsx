@@ -4,7 +4,7 @@ import PolicyPage from "@/components/policy-page";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How WePhoton collects, uses, and protects your personal information across our website, services, and the Dawingo Multiverse.",
+    "How Wephoton collects, uses, and protects your personal information across our website, services, and the Dawingo Multiverse.",
 };
 
 export default function PrivacyPolicy() {
@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       <section>
         <h2>1. Who We Are</h2>
         <p>
-          WePhoton (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a
+          Wephoton (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a
           software development company operating from India, reachable at{" "}
           <a href="mailto:support@wephoton.in">support@wephoton.in</a>. This
           policy explains how we handle personal information collected through
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
         <ul>
           <li>
             <strong>Contact details</strong> you share when requesting a quote,
-            demo, or support — name, email address, phone number, company name.
+            demo, or support · name, email address, phone number, company name.
           </li>
           <li>
             <strong>Project information</strong> you provide during an
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
           </li>
           <li>
             <strong>Usage data</strong> collected automatically when you browse
-            our website or use Dawingo products — device type, browser, pages
+            our website or use Dawingo products · device type, browser, pages
             visited, and similar analytics signals.
           </li>
           <li>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
           <li>To operate, secure, and improve our website and products.</li>
           <li>To send invoices, service notices, and renewal reminders.</li>
           <li>
-            To share product updates you have opted into — you can unsubscribe
+            To share product updates you have opted into · you can unsubscribe
             at any time.
           </li>
           <li>To meet legal and tax obligations under Indian law.</li>
@@ -82,8 +82,8 @@ export default function PrivacyPolicy() {
       <section>
         <h2>6. Data Security & Retention</h2>
         <p>
-          We use industry-standard safeguards — encryption in transit, access
-          controls, and least-privilege practices — to protect your data. We
+          We use industry-standard safeguards · encryption in transit, access
+          controls, and least-privilege practices · to protect your data. We
           retain personal information only as long as needed for the purposes
           above or as required by law, then delete or anonymise it.
         </p>

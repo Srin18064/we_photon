@@ -11,15 +11,15 @@ const faqs = [
   },
   {
     q: "How much does a website or app cost?",
-    a: "Websites start from ₹4,000, mobile apps from ₹35,000, and enterprise e-commerce platforms from ₹45,000. These are starting points — final pricing depends on features, integrations, and design scope, and is confirmed in a written quotation before any work starts.",
+    a: "Websites start from ₹4,000, mobile apps from ₹35,000, and enterprise e-commerce platforms from ₹45,000. These are starting points · final pricing depends on features, integrations, and design scope, and is confirmed in a written quotation before any work starts.",
   },
   {
     q: "Will my app be published on the Play Store and App Store?",
-    a: "Yes. Store submission is part of our app development engagements — we handle store listings, review requirements, and publishing under your developer accounts, and guide you through account creation if you don't have them yet.",
+    a: "Yes. Store submission is part of our app development engagements · we handle store listings, review requirements, and publishing under your developer accounts, and guide you through account creation if you don't have them yet.",
   },
   {
     q: "Who owns the source code after the project?",
-    a: "You do. On full payment, complete source code and deployment credentials for your custom build are handed over to you. Our own pre-existing tools and the Dawingo products remain WePhoton property.",
+    a: "You do. On full payment, complete source code and deployment credentials for your custom build are handed over to you. Our own pre-existing tools and the Dawingo products remain Wephoton property.",
   },
   {
     q: "Do you provide support after launch?",
@@ -27,11 +27,11 @@ const faqs = [
   },
   {
     q: "Can you take over or modernise an existing app or website?",
-    a: "Yes. We audit the existing codebase first, then either extend it or propose a rebuild with a migration path — whichever is cheaper and safer for your timeline. Legacy system modernisation is one of our core engagements.",
+    a: "Yes. We audit the existing codebase first, then either extend it or propose a rebuild with a migration path · whichever is cheaper and safer for your timeline. Legacy system modernisation is one of our core engagements.",
   },
   {
     q: "What do you need from me to get started?",
-    a: "A clear idea of the problem, any branding or content you have, and a point of contact for decisions. We turn that into a written scope, quote, and milestone plan — usually within a few business days of the first call.",
+    a: "A clear idea of the problem, any branding or content you have, and a point of contact for decisions. We turn that into a written scope, quote, and milestone plan · usually within a few business days of the first call.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Faq() {
         Frequently asked questions
       </h2>
       <p className="mt-3 text-sm text-platinum">
-        App, software, and website development — answered before you ask.
+        App, software, and website development · answered before you ask.
       </p>
 
       <div className="mt-8 space-y-3">

@@ -22,7 +22,7 @@ export default function Services() {
 
         {/* Asymmetric split: 7/5 on desktop */}
         <div className="mt-14 grid gap-6 lg:grid-cols-12">
-          {/* Custom Software Development — dominant cell */}
+          {/* Custom Software Development · dominant cell */}
           <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/40 hover:shadow-[0_0_48px_rgba(237,167,53,0.15)] lg:col-span-7 lg:p-12">
             <div
               aria-hidden
@@ -70,7 +70,7 @@ export default function Services() {
                 Mobile Application Development
               </h3>
               <p className="mt-4 leading-relaxed text-platinum">
-                High-performance iOS and Android applications — native where it
+                High-performance iOS and Android applications · native where it
                 matters, cross-platform where it&apos;s smart.
               </p>
               <ul className="mt-8 grid gap-4">

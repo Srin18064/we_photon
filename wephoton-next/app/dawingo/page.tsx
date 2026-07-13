@@ -5,9 +5,9 @@ import DawingoGrid from "@/components/dawingo";
 import { Rocket } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Dawingo Multiverse — Our Products",
+  title: "Dawingo Multiverse · Our Products",
   description:
-    "The Dawingo Multiverse: WePhoton's own SaaS product family — 19 platforms for restaurants, hotels, schools, hospitals, retail, and more. Dawingo Resto is live now.",
+    "The Dawingo Multiverse: Wephoton's own SaaS product family · 19 platforms for restaurants, hotels, schools, hospitals, retail, and more. Dawingo Resto is live now.",
 };
 
 export default function DawingoPage() {
@@ -24,7 +24,7 @@ export default function DawingoPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-4 py-1.5 font-display text-[11px] font-bold uppercase tracking-widest text-amber">
             <Rocket className="size-3.5" aria-hidden />
-            New Launch — Our Own Product
+            New Launch · Our Own Product
           </p>
 
           <h1 className="mt-6 max-w-3xl font-display text-5xl font-bold tracking-tight sm:text-6xl">
@@ -35,8 +35,8 @@ export default function DawingoPage() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-platinum">
-            One product family for every operation a business runs — built,
-            hosted, and supported entirely by WePhoton. Dawingo Resto is live
+            One product family for every operation a business runs · built,
+            hosted, and supported entirely by Wephoton. Dawingo Resto is live
             in production today; eighteen more worlds are on the way.
           </p>
 
