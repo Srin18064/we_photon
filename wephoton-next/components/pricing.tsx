@@ -18,7 +18,7 @@ const tiers = [
   },
   {
     name: "Mobile App Development",
-    price: "₹35,000",
+    price: "₹55,000",
     icon: Smartphone,
     popular: true,
     description:
@@ -32,7 +32,7 @@ const tiers = [
   },
   {
     name: "Enterprise E-commerce Platforms",
-    price: "₹45,000",
+    price: "₹85,000",
     icon: ShoppingCart,
     popular: false,
     description:
