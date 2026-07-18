@@ -65,6 +65,22 @@ body {
   color: #ffffff;
 }
 
+/* Site content is not copyable; form fields stay editable/selectable. */
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
 :focus-visible {
   outline: 2px solid var(--color-amber);
   outline-offset: 3px;

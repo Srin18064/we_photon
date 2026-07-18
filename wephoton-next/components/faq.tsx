@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "How much does a website or app cost?",
-    a: "Websites start from ₹4,000, mobile apps from ₹35,000, and enterprise e-commerce platforms from ₹45,000. These are starting points · final pricing depends on features, integrations, and design scope, and is confirmed in a written quotation before any work starts.",
+    a: "Websites start from ₹4,000, mobile apps from ₹55,000, and enterprise e-commerce platforms from ₹85,000. These are starting points · final pricing depends on features, integrations, and design scope, and is confirmed in a written quotation before any work starts.",
   },
   {
     q: "Will my app be published on the Play Store and App Store?",
